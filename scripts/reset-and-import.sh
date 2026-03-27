@@ -13,8 +13,8 @@ fi
 echo "Stopping containers and removing timo-data volume (old SQLite + WAL removed)..."
 docker compose down -v
 
-echo "Starting stack (empty /data volume)..."
-docker compose up -d
+echo "Rebuilding image and starting stack (empty /data volume)..."
+docker compose up -d --build
 
 echo "Importing backup into fresh database..."
 docker compose run --rm \

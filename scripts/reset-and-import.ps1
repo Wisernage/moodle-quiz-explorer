@@ -18,8 +18,8 @@ if ($len -lt 10) {
 Write-Host "Stopping containers and removing timo-data volume (old SQLite + WAL removed)..."
 docker compose down -v
 
-Write-Host "Starting stack (empty /data volume)..."
-docker compose up -d
+Write-Host "Rebuilding image and starting stack (empty /data volume)..."
+docker compose up -d --build
 
 Write-Host "Importing backup into fresh database..."
 docker compose run --rm `

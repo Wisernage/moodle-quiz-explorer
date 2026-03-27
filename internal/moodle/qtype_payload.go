@@ -12,6 +12,7 @@ func BuildPayloadJSON(qType string, xmlBytes []byte) string {
 	t := strings.TrimSpace(strings.ToLower(qType))
 	switch t {
 	case "multichoice":
+		// Export / Moodle XML format: <answer fraction="…"><text>…</text></answer> on <question>.
 		var mc struct {
 			Single          string `xml:"single"`
 			ShuffleAnswers  string `xml:"shuffleanswers"`
@@ -34,11 +35,51 @@ func BuildPayloadJSON(qType string, xmlBytes []byte) string {
 			}
 			answers = append(answers, ans{Text: strings.TrimSpace(a.Text), Fraction: f})
 		}
+		single := mc.Single == "1" || strings.EqualFold(strings.TrimSpace(mc.Single), "true")
+		shuffle := mc.ShuffleAnswers == "1" || strings.EqualFold(strings.TrimSpace(mc.ShuffleAnswers), "true")
+		numbering := strings.TrimSpace(mc.AnswerNumbering)
+
+		if len(answers) == 0 {
+			// Moodle 2.x/3.x course backup: answers live under plugin_qtype_multichoice_question with <answertext> + <fraction>.
+			var leg struct {
+				Plugin struct {
+					Answers struct {
+						List []struct {
+							AnsText  string `xml:"answertext"`
+							Fraction string `xml:"fraction"`
+						} `xml:"answer"`
+					} `xml:"answers"`
+					MC struct {
+						Single          string `xml:"single"`
+						ShuffleAnswers  string `xml:"shuffleanswers"`
+						AnswerNumbering string `xml:"answernumbering"`
+					} `xml:"multichoice"`
+				} `xml:"plugin_qtype_multichoice_question"`
+			}
+			_ = xml.Unmarshal(xmlBytes, &leg)
+			for _, a := range leg.Plugin.Answers.List {
+				f, _ := strconv.ParseFloat(strings.TrimSpace(a.Fraction), 64)
+				if f > 1.001 {
+					f /= 100
+				}
+				answers = append(answers, ans{Text: strings.TrimSpace(a.AnsText), Fraction: f})
+			}
+			if leg.Plugin.MC.Single != "" {
+				single = leg.Plugin.MC.Single == "1" || strings.EqualFold(strings.TrimSpace(leg.Plugin.MC.Single), "true")
+			}
+			if leg.Plugin.MC.ShuffleAnswers != "" {
+				shuffle = leg.Plugin.MC.ShuffleAnswers == "1" || strings.EqualFold(strings.TrimSpace(leg.Plugin.MC.ShuffleAnswers), "true")
+			}
+			if leg.Plugin.MC.AnswerNumbering != "" {
+				numbering = strings.TrimSpace(leg.Plugin.MC.AnswerNumbering)
+			}
+		}
+
 		out := map[string]any{
 			"qtype":           "multichoice",
-			"single":          strings.EqualFold(strings.TrimSpace(mc.Single), "true") || mc.Single == "1",
-			"shuffleanswers":  strings.EqualFold(strings.TrimSpace(mc.ShuffleAnswers), "true") || mc.ShuffleAnswers == "1",
-			"answernumbering": strings.TrimSpace(mc.AnswerNumbering),
+			"single":          single,
+			"shuffleanswers":  shuffle,
+			"answernumbering": numbering,
 			"answers":         answers,
 		}
 		b, _ := json.Marshal(out)

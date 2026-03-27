@@ -354,7 +354,11 @@ func ensureQuestionByBankID(tx *gorm.DB, bankID int64, byQID map[int64]moodle.Qu
 		return 0, nil
 	}
 	var ex model.Question
-	if err := tx.Where("moodle_bank_entry_id = ?", bankID).First(&ex).Error; err == nil {
+	res := tx.Limit(1).Where("moodle_bank_entry_id = ?", bankID).Find(&ex)
+	if res.Error != nil {
+		return 0, res.Error
+	}
+	if res.RowsAffected > 0 {
 		return ex.ID, nil
 	}
 
@@ -403,7 +407,11 @@ func ensureQuestionByMoodleQID(tx *gorm.DB, moodleQID int64, byQID map[int64]moo
 		return 0, nil
 	}
 	var ex model.Question
-	if err := tx.Where("moodle_question_id = ?", moodleQID).First(&ex).Error; err == nil {
+	res := tx.Limit(1).Where("moodle_question_id = ?", moodleQID).Find(&ex)
+	if res.Error != nil {
+		return 0, res.Error
+	}
+	if res.RowsAffected > 0 {
 		return ex.ID, nil
 	}
 	qxml, ok := byQID[moodleQID]

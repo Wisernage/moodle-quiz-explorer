@@ -114,6 +114,12 @@ func (s *Server) handleAttemptPost(w http.ResponseWriter, r *http.Request) {
 	_ = json.NewEncoder(w).Encode(map[string]any{"id": pa.ID, "ok": true})
 }
 
+// quizPageData is passed to quiz.html (embedded Quiz + JSON for attempt preview).
+type quizPageData struct {
+	*model.Quiz
+	SlotsWire template.JS
+}
+
 func (s *Server) renderQuizPage(w http.ResponseWriter, q *model.Quiz) {
 	tmpl := template.New("quiz.html").Funcs(template.FuncMap{
 		"safeHTML": func(s string) template.HTML {
@@ -133,6 +139,36 @@ func (s *Server) renderQuizPage(w http.ResponseWriter, q *model.Quiz) {
 		http.Error(w, err.Error(), http.StatusInternalServerError)
 		return
 	}
+
+	type slotWire struct {
+		Slot         int             `json:"slot"`
+		Qtype        string          `json:"qtype"`
+		QuestionText string          `json:"questionText"`
+		Payload      json.RawMessage `json:"payload"`
+	}
+	var wire []slotWire
+	for _, sl := range q.Slots {
+		sw := slotWire{Slot: sl.Slot}
+		if sl.Question != nil {
+			sw.Qtype = sl.Question.Qtype
+			sw.QuestionText = sl.Question.QuestionText
+			p := strings.TrimSpace(sl.Question.Payload)
+			if p == "" {
+				sw.Payload = json.RawMessage(`{}`)
+			} else if json.Valid([]byte(p)) {
+				sw.Payload = json.RawMessage(p)
+			} else {
+				sw.Payload = json.RawMessage(`{"qtype":"invalid"}`)
+			}
+		}
+		wire = append(wire, sw)
+	}
+	slotsJSON, err := json.Marshal(wire)
+	if err != nil {
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+		return
+	}
+
 	w.Header().Set("Content-Type", "text/html; charset=utf-8")
-	_ = tmpl.Execute(w, q)
+	_ = tmpl.Execute(w, quizPageData{Quiz: q, SlotsWire: template.JS(slotsJSON)})
 }

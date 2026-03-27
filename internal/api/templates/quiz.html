@@ -5,34 +5,424 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>{{.Name}}</title>
   <style>
-    body { font-family: system-ui, sans-serif; max-width: 52rem; margin: 2rem auto; padding: 0 1rem; color: #1a1a1a; background: #fafafa; }
+    :root {
+      --moodle-bg: #f5f6f8;
+      --moodle-card: #fff;
+      --moodle-primary: #0f6cbf;
+      --moodle-primary-dark: #0a5599;
+      --moodle-border: #dee2e6;
+      --moodle-muted: #6a737d;
+      --moodle-text: #1d2125;
+    }
+    body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; max-width: 52rem; margin: 2rem auto; padding: 0 1rem; color: var(--moodle-text); background: #fafafa; }
     h1 { font-size: 1.5rem; }
-    .meta { color: #555; font-size: 0.9rem; margin-bottom: 1.5rem; }
+    .meta { color: #555; font-size: 0.9rem; margin-bottom: 1rem; }
+    a { color: var(--moodle-primary); }
+
+    .view-toolbar {
+      display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 1rem;
+      margin-bottom: 1.25rem; padding: 0.75rem 1rem;
+      background: var(--moodle-card); border: 1px solid var(--moodle-border); border-radius: 4px;
+      box-shadow: 0 1px 2px rgba(0,0,0,.04);
+    }
+    .view-toolbar label { font-size: 0.875rem; font-weight: 600; color: var(--moodle-muted); }
+    .view-toggle { display: inline-flex; border-radius: 4px; overflow: hidden; border: 1px solid var(--moodle-border); }
+    .view-toggle button {
+      margin: 0; padding: 0.4rem 0.85rem; font-size: 0.875rem; border: none; background: #fff; cursor: pointer;
+      color: var(--moodle-muted);
+    }
+    .view-toggle button + button { border-left: 1px solid var(--moodle-border); }
+    .view-toggle button[aria-pressed="true"] {
+      background: var(--moodle-primary); color: #fff;
+    }
+    .view-toggle button:focus-visible { outline: 2px solid var(--moodle-primary); outline-offset: 2px; }
+    .view-hint { font-size: 0.8rem; color: var(--moodle-muted); flex: 1; min-width: 12rem; }
+
+    .view-panel[hidden] { display: none !important; }
+
+    /* Developer view */
     .q { border: 1px solid #ddd; border-radius: 8px; padding: 1rem 1.25rem; margin-bottom: 1rem; background: #fff; }
     .q h2 { font-size: 1rem; margin: 0 0 0.5rem; }
     .unsupported { background: #fff8e6; border-color: #e6c200; }
     pre.payload { font-size: 0.75rem; overflow: auto; max-height: 12rem; background: #f4f4f4; padding: 0.5rem; border-radius: 4px; }
-    a { color: #0b57d0; }
+
+    /* Moodle attempt preview */
+    .moodle-attempt { background: var(--moodle-bg); margin: 0 -1rem; padding: 1.5rem 1rem 2rem; border-radius: 8px; }
+    .moodle-attempt-inner { max-width: 48rem; margin: 0 auto; }
+    .moodle-attempt .quiz-intro { background: var(--moodle-card); border: 1px solid var(--moodle-border); border-radius: 4px; padding: 1rem 1.25rem; margin-bottom: 1rem; }
+    .que {
+      background: var(--moodle-card); border: 1px solid var(--moodle-border); border-radius: 4px;
+      margin-bottom: 1rem; overflow: hidden;
+      box-shadow: 0 1px 2px rgba(0,0,0,.05);
+    }
+    .que .info { display: flex; align-items: baseline; gap: 0.5rem; padding: 0.65rem 1rem; background: #f8f9fa; border-bottom: 1px solid var(--moodle-border); }
+    .que .info .no { font-weight: 600; color: var(--moodle-primary); font-size: 0.95rem; }
+    .que .info .qtype { font-size: 0.75rem; color: var(--moodle-muted); text-transform: lowercase; }
+    .que .content { padding: 1rem 1.25rem; }
+    .que .content .qtext { line-height: 1.5; }
+    .que .content .qtext img { max-width: 100%; height: auto; }
+    .ablock { margin-top: 1rem; padding-top: 1rem; border-top: 1px dashed var(--moodle-border); }
+    .ablock legend { font-size: 0.8rem; font-weight: 600; color: var(--moodle-muted); margin-bottom: 0.5rem; }
+    .answer-item { display: flex; align-items: flex-start; gap: 0.5rem; margin: 0.4rem 0; padding: 0.35rem 0.25rem; border-radius: 4px; }
+    .answer-item:hover { background: #f8f9fa; }
+    .answer-item label { cursor: pointer; flex: 1; line-height: 1.4; }
+    .answer-item input { margin-top: 0.2rem; }
+    .answer-prefix { min-width: 1.5rem; font-weight: 600; color: var(--moodle-muted); font-size: 0.9rem; }
+    .moodle-input, .moodle-textarea, .moodle-select {
+      width: 100%; max-width: 36rem; padding: 0.5rem 0.65rem; font: inherit;
+      border: 1px solid var(--moodle-border); border-radius: 4px; background: #fff;
+    }
+    .moodle-textarea { min-height: 8rem; resize: vertical; }
+    .moodle-select { max-width: 100%; }
+    .match-table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+    .match-table th, .match-table td { border: 1px solid var(--moodle-border); padding: 0.5rem 0.65rem; text-align: left; vertical-align: middle; }
+    .match-table th { background: #f8f9fa; font-weight: 600; font-size: 0.75rem; color: var(--moodle-muted); }
+    .que.unsupported-que .content { background: #fffbeb; }
+    .que.missing-que .content { background: #fff5f5; }
+    .attempt-footer {
+      margin-top: 1.5rem; padding: 1rem; background: var(--moodle-card); border: 1px solid var(--moodle-border); border-radius: 4px;
+      display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem;
+    }
+    .attempt-footer .btn-moodle {
+      display: inline-block; padding: 0.5rem 1.25rem; font-size: 0.9rem; font-weight: 600;
+      color: #fff; background: var(--moodle-primary); border: none; border-radius: 4px; cursor: default;
+      opacity: 0.85;
+    }
+    .attempt-footer small { color: var(--moodle-muted); }
   </style>
 </head>
 <body>
   <p><a href="/">← Quizzes</a></p>
   <h1>{{.Name}}</h1>
   <p class="meta">Moodle quiz id {{.MoodleQuizID}} · behaviour {{.QuestionBehaviour}}</p>
-  <div class="intro">{{.Intro | safeHTML}}</div>
-  {{range .Slots}}
-  <div class="q {{if .Question}}{{if isUnsupported .Question.Qtype}}unsupported{{end}}{{end}}">
-    <h2>Slot {{.Slot}} · {{if .Question}}{{.Question.Qtype}}{{else}}(no question){{end}}</h2>
-    {{if .Question}}
-      <div class="stem">{{.Question.QuestionText | safeHTML}}</div>
-      {{if isUnsupported .Question.Qtype}}
-        <p><em>This question type is imported but not interactive in v1.</em></p>
+
+  <div class="view-toolbar" role="group" aria-label="View mode">
+    <label>View</label>
+    <div class="view-toggle">
+      <button type="button" id="btn-dev" aria-pressed="true">Developer</button>
+      <button type="button" id="btn-attempt" aria-pressed="false">Quiz preview</button>
+    </div>
+    <span class="view-hint">Quiz preview mimics a Moodle attempt layout (local only; nothing is saved).</span>
+  </div>
+
+  <div id="panel-dev" class="view-panel">
+    <div class="intro">{{.Intro | safeHTML}}</div>
+    {{range .Slots}}
+    <div class="q {{if .Question}}{{if isUnsupported .Question.Qtype}}unsupported{{end}}{{end}}">
+      <h2>Slot {{.Slot}} · {{if .Question}}{{.Question.Qtype}}{{else}}(no question){{end}}</h2>
+      {{if .Question}}
+        <div class="stem">{{.Question.QuestionText | safeHTML}}</div>
+        {{if isUnsupported .Question.Qtype}}
+          <p><em>This question type is imported but not interactive in v1.</em></p>
+        {{end}}
+        <pre class="payload">{{.Question.Payload}}</pre>
+      {{else}}
+        <p><em>Missing question reference.</em></p>
       {{end}}
-      <pre class="payload">{{.Question.Payload}}</pre>
-    {{else}}
-      <p><em>Missing question reference.</em></p>
+    </div>
     {{end}}
   </div>
-  {{end}}
+
+  <div id="panel-attempt" class="view-panel" hidden>
+    <div class="moodle-attempt">
+      <div class="moodle-attempt-inner">
+        <div class="quiz-intro">{{.Intro | safeHTML}}</div>
+        <div id="moodle-attempt-slots"></div>
+        <div class="attempt-footer">
+          <span class="btn-moodle" aria-disabled="true">Submit all and finish</span>
+          <small>Preview only — answers stay in the browser and are not stored.</small>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="application/json" id="quiz-slots-json">{{.SlotsWire}}</script>
+  <script>
+(function () {
+  var KEY = 'timo_quiz_view';
+  var slotsEl = document.getElementById('moodle-attempt-slots');
+  var jsonEl = document.getElementById('quiz-slots-json');
+  var panelDev = document.getElementById('panel-dev');
+  var panelAttempt = document.getElementById('panel-attempt');
+  var btnDev = document.getElementById('btn-dev');
+  var btnAttempt = document.getElementById('btn-attempt');
+
+  function shuffle(arr) {
+    var a = arr.slice();
+    for (var i = a.length - 1; i > 0; i--) {
+      var j = Math.floor(Math.random() * (i + 1));
+      var t = a[i]; a[i] = a[j]; a[j] = t;
+    }
+    return a;
+  }
+
+  function answerPrefix(numbering, index) {
+    var raw = numbering || 'abc';
+    var n = raw.toLowerCase();
+    if (n === 'none' || n === '') return '';
+    if (raw === 'ABC' || raw === 'ABCD') return String.fromCharCode(65 + index);
+    if (n === 'abc' || n === 'abcd') return String.fromCharCode(97 + index);
+    if (n === '123' || n === '1234') return String(index + 1);
+    return String.fromCharCode(97 + index);
+  }
+
+  function escapeHtml(s) {
+    if (!s) return '';
+    var d = document.createElement('div');
+    d.textContent = s;
+    return d.innerHTML;
+  }
+
+  function isUnsupportedType(qtype) {
+    var t = (qtype || '').toLowerCase().trim();
+    switch (t) {
+      case 'multichoice': case 'truefalse': case 'shortanswer': case 'essay': case 'match': case 'description':
+        return false;
+      default:
+        return true;
+    }
+  }
+
+  function renderStem(html) {
+    var d = document.createElement('div');
+    d.className = 'qtext';
+    d.innerHTML = html || '';
+    return d;
+  }
+
+  function renderMultichoice(slot, payload) {
+    var single = payload.single !== false;
+    var answers = payload.answers || [];
+    var numbering = payload.answernumbering || 'abc';
+    var list = payload.shuffleanswers ? shuffle(answers) : answers.slice();
+    var ab = document.createElement('div');
+    ab.className = 'ablock';
+    var leg = document.createElement('div');
+    leg.setAttribute('role', single ? 'radiogroup' : 'group');
+    list.forEach(function (a, i) {
+      var row = document.createElement('div');
+      row.className = 'answer-item';
+      var pref = document.createElement('span');
+      pref.className = 'answer-prefix';
+      var p = answerPrefix(numbering, i);
+      pref.textContent = p ? p + '.' : '';
+      pref.style.display = p ? '' : 'none';
+      var lab = document.createElement('label');
+      var input = document.createElement('input');
+      input.type = single ? 'radio' : 'checkbox';
+      input.name = 'slot_' + slot + (single ? '' : '[]');
+      input.value = String(i);
+      var span = document.createElement('span');
+      span.innerHTML = (a.text || '');
+      lab.appendChild(input);
+      lab.appendChild(document.createTextNode(' '));
+      lab.appendChild(span);
+      row.appendChild(pref);
+      row.appendChild(lab);
+      leg.appendChild(row);
+    });
+    ab.appendChild(leg);
+    return ab;
+  }
+
+  function renderTruefalse(slot) {
+    var ab = document.createElement('div');
+    ab.className = 'ablock';
+    var leg = document.createElement('div');
+    leg.setAttribute('role', 'radiogroup');
+    [['true', 'True'], ['false', 'False']].forEach(function (pair) {
+      var row = document.createElement('div');
+      row.className = 'answer-item';
+      var lab = document.createElement('label');
+      var input = document.createElement('input');
+      input.type = 'radio';
+      input.name = 'slot_' + slot;
+      input.value = pair[0];
+      lab.appendChild(input);
+      lab.appendChild(document.createTextNode(' ' + pair[1]));
+      row.appendChild(lab);
+      leg.appendChild(row);
+    });
+    ab.appendChild(leg);
+    return ab;
+  }
+
+  function renderShortanswer(slot) {
+    var ab = document.createElement('div');
+    ab.className = 'ablock';
+    var inp = document.createElement('input');
+    inp.type = 'text';
+    inp.className = 'moodle-input';
+    inp.name = 'slot_' + slot;
+    inp.setAttribute('autocomplete', 'off');
+    ab.appendChild(inp);
+    return ab;
+  }
+
+  function renderEssay(slot) {
+    var ab = document.createElement('div');
+    ab.className = 'ablock';
+    var ta = document.createElement('textarea');
+    ta.className = 'moodle-textarea';
+    ta.name = 'slot_' + slot;
+    ab.appendChild(ta);
+    return ab;
+  }
+
+  function renderMatch(slot, payload) {
+    var pairs = payload.pairs || [];
+    var ab = document.createElement('div');
+    ab.className = 'ablock';
+    var answers = [];
+    pairs.forEach(function (p) {
+      if (p.answer && answers.indexOf(p.answer) < 0) answers.push(p.answer);
+    });
+    if (payload.shuffleanswers) answers = shuffle(answers);
+    var table = document.createElement('table');
+    table.className = 'match-table';
+    var thead = document.createElement('thead');
+    thead.innerHTML = '<tr><th>Question</th><th>Answer</th></tr>';
+    table.appendChild(thead);
+    var tbody = document.createElement('tbody');
+    pairs.forEach(function (p, idx) {
+      var tr = document.createElement('tr');
+      var tdQ = document.createElement('td');
+      tdQ.innerHTML = p.stem || '';
+      var tdA = document.createElement('td');
+      var sel = document.createElement('select');
+      sel.className = 'moodle-select';
+      sel.name = 'slot_' + slot + '_' + idx;
+      var o0 = document.createElement('option');
+      o0.value = '';
+      o0.textContent = 'Choose…';
+      sel.appendChild(o0);
+      answers.forEach(function (ans) {
+        var o = document.createElement('option');
+        o.value = ans;
+        o.textContent = ans.replace(/<[^>]+>/g, '');
+        sel.appendChild(o);
+      });
+      tdA.appendChild(sel);
+      tr.appendChild(tdQ);
+      tr.appendChild(tdA);
+      tbody.appendChild(tr);
+    });
+    table.appendChild(tbody);
+    ab.appendChild(table);
+    return ab;
+  }
+
+  function renderDescription() {
+    var note = document.createElement('p');
+    note.style.cssText = 'color:var(--moodle-muted);font-size:0.9rem;margin:0;';
+    note.textContent = 'This is a label / content block (no answer required).';
+    return note;
+  }
+
+  function renderUnsupported(qtype) {
+    var p = document.createElement('p');
+    p.style.margin = '0';
+    p.innerHTML = '<em>This question type (' + escapeHtml(qtype || 'unknown') + ') is not shown interactively in preview.</em>';
+    return p;
+  }
+
+  function buildQuestion(slot, qtype, questionText, payload) {
+    var unsupported = isUnsupportedType(qtype);
+    var que = document.createElement('div');
+    que.className = 'que';
+    if (unsupported) que.classList.add('unsupported-que');
+    if (!qtype && !questionText) que.classList.add('missing-que');
+
+    var info = document.createElement('div');
+    info.className = 'info';
+    info.innerHTML = '<span class="no">Question ' + slot + '</span><span class="qtype">' + escapeHtml(qtype || '—') + '</span>';
+    que.appendChild(info);
+
+    var content = document.createElement('div');
+    content.className = 'content';
+    if (questionText) content.appendChild(renderStem(questionText));
+
+    if (!qtype) {
+      var miss = document.createElement('p');
+      miss.innerHTML = '<em>Missing question reference.</em>';
+      content.appendChild(miss);
+      que.appendChild(content);
+      return que;
+    }
+
+    if (unsupported) {
+      content.appendChild(renderUnsupported(qtype));
+      que.appendChild(content);
+      return que;
+    }
+
+    var qt = (payload && payload.qtype) || '';
+    if (payload && payload.unsupported) {
+      content.appendChild(renderUnsupported(qtype));
+      que.appendChild(content);
+      return que;
+    }
+
+    if (qt === 'multichoice' || qtype === 'multichoice') {
+      content.appendChild(renderMultichoice(slot, payload));
+    } else if (qt === 'truefalse' || qtype === 'truefalse') {
+      content.appendChild(renderTruefalse(slot));
+    } else if (qt === 'shortanswer' || qtype === 'shortanswer') {
+      content.appendChild(renderShortanswer(slot));
+    } else if (qt === 'essay' || qtype === 'essay') {
+      content.appendChild(renderEssay(slot));
+    } else if (qt === 'match' || qtype === 'match') {
+      content.appendChild(renderMatch(slot, payload));
+    } else if (qt === 'description' || qtype === 'description') {
+      content.appendChild(renderDescription());
+    } else {
+      content.appendChild(renderUnsupported(qtype));
+    }
+
+    que.appendChild(content);
+    return que;
+  }
+
+  function renderAttempt() {
+    if (slotsEl.dataset.rendered === '1') return;
+    var raw = jsonEl.textContent || '[]';
+    var slots;
+    try { slots = JSON.parse(raw); } catch (e) { slots = []; }
+    slots.forEach(function (s) {
+      var payload = {};
+      try {
+        if (s.payload && typeof s.payload === 'object') payload = s.payload;
+        else if (typeof s.payload === 'string') payload = JSON.parse(s.payload);
+      } catch (e2) { payload = {}; }
+      slotsEl.appendChild(buildQuestion(s.slot, s.qtype, s.questionText, payload));
+    });
+    slotsEl.dataset.rendered = '1';
+  }
+
+  function setView(attempt) {
+    if (attempt) {
+      renderAttempt();
+      panelDev.hidden = true;
+      panelAttempt.hidden = false;
+      btnDev.setAttribute('aria-pressed', 'false');
+      btnAttempt.setAttribute('aria-pressed', 'true');
+      try { localStorage.setItem(KEY, 'attempt'); } catch (e) {}
+    } else {
+      panelDev.hidden = false;
+      panelAttempt.hidden = true;
+      btnDev.setAttribute('aria-pressed', 'true');
+      btnAttempt.setAttribute('aria-pressed', 'false');
+      try { localStorage.setItem(KEY, 'dev'); } catch (e) {}
+    }
+  }
+
+  btnDev.addEventListener('click', function () { setView(false); });
+  btnAttempt.addEventListener('click', function () { setView(true); });
+
+  var initial = 'dev';
+  try { initial = localStorage.getItem(KEY) || 'dev'; } catch (e) {}
+  setView(initial === 'attempt');
+})();
+  </script>
 </body>
 </html>
