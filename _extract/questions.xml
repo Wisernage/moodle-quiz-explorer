@@ -1,0 +1,2778 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<question_categories>
+  <question_category id="158">
+    <name>top</name>
+    <contextid>1114</contextid>
+    <contextlevel>70</contextlevel>
+    <contextinstanceid>521</contextinstanceid>
+    <info></info>
+    <infoformat>0</infoformat>
+    <stamp>moodle.learn.eosc-synergy.eu+211026084041+OsXVPq</stamp>
+    <parent>0</parent>
+    <sortorder>0</sortorder>
+    <idnumber>$@NULL@$</idnumber>
+    <questions>
+    </questions>
+  </question_category>
+  <question_category id="159">
+    <name>Default for Quiz</name>
+    <contextid>1114</contextid>
+    <contextlevel>70</contextlevel>
+    <contextinstanceid>521</contextinstanceid>
+    <info>The default category for questions shared in context 'Quiz'.</info>
+    <infoformat>0</infoformat>
+    <stamp>moodle.learn.eosc-synergy.eu+211026084041+75tw5x</stamp>
+    <parent>158</parent>
+    <sortorder>999</sortorder>
+    <idnumber>$@NULL@$</idnumber>
+    <questions>
+    </questions>
+  </question_category>
+  <question_category id="160">
+    <name>top</name>
+    <contextid>1109</contextid>
+    <contextlevel>50</contextlevel>
+    <contextinstanceid>132</contextinstanceid>
+    <info></info>
+    <infoformat>0</infoformat>
+    <stamp>moodle.learn.eosc-synergy.eu+211026084042+cER19p</stamp>
+    <parent>0</parent>
+    <sortorder>0</sortorder>
+    <idnumber>$@NULL@$</idnumber>
+    <questions>
+    </questions>
+  </question_category>
+  <question_category id="161">
+    <name>Default for Data steward training </name>
+    <contextid>1109</contextid>
+    <contextlevel>50</contextlevel>
+    <contextinstanceid>132</contextinstanceid>
+    <info>The default category for questions shared in context 'Data steward training '.</info>
+    <infoformat>0</infoformat>
+    <stamp>moodle.learn.eosc-synergy.eu+211026084042+DOcseN</stamp>
+    <parent>160</parent>
+    <sortorder>999</sortorder>
+    <idnumber>$@NULL@$</idnumber>
+    <questions>
+      <question id="265">
+        <parent>0</parent>
+        <name>Q1</name>
+        <questiontext>&lt;p dir="ltr" style="text-align: left;"&gt;&lt;span lang="EN-GB"&gt;Please &lt;span&gt;name the three frameworks&lt;/span&gt; of responsibility introduced in this course:&lt;/span&gt;&lt;br&gt;&lt;/p&gt;&lt;p dir="ltr" style="text-align: left;"&gt;&lt;span lang="EN-GB"&gt;&lt;strong&gt;(Select three)&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback></generalfeedback>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>1.0000000</defaultmark>
+        <penalty>0.3333333</penalty>
+        <qtype>multichoice</qtype>
+        <length>1</length>
+        <stamp>moodle.learn.eosc-synergy.eu+211026123826+tkUkKf</stamp>
+        <version>moodle.learn.eosc-synergy.eu+220111152617+GIGpqv</version>
+        <hidden>0</hidden>
+        <timecreated>1635251906</timecreated>
+        <timemodified>1641914777</timemodified>
+        <createdby>30</createdby>
+        <modifiedby>65</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <plugin_qtype_multichoice_question>
+          <answers>
+            <answer id="1029">
+              <answertext>&lt;p dir="ltr" style="text-align: left;"&gt;Responsible Conduct of Research (RCR)&lt;br&gt;&lt;/p&gt;</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.3333333</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1030">
+              <answertext>&lt;p dir="ltr" style="text-align: left;"&gt;Collaborative Research (CR)&lt;br&gt;&lt;/p&gt;</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1031">
+              <answertext>&lt;p dir="ltr" style="text-align: left;"&gt;Peer Review (PR)&lt;br&gt;&lt;/p&gt;</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1032">
+              <answertext>&lt;p dir="ltr" style="text-align: left;"&gt;Research Misconduct (RM)&lt;br&gt;&lt;/p&gt;</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1033">
+              <answertext>&lt;p dir="ltr" style="text-align: left;"&gt;Responsible Research and Innovation (RRI)&lt;br&gt;&lt;/p&gt;</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.3333333</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1034">
+              <answertext>&lt;p dir="ltr" style="text-align: left;"&gt;Open Science (OS)&lt;br&gt;&lt;/p&gt;</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.3333333</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+          </answers>
+          <multichoice id="227">
+            <layout>0</layout>
+            <single>0</single>
+            <shuffleanswers>1</shuffleanswers>
+            <correctfeedback>Your answer is correct.</correctfeedback>
+            <correctfeedbackformat>1</correctfeedbackformat>
+            <partiallycorrectfeedback>Your answer is partially correct.</partiallycorrectfeedback>
+            <partiallycorrectfeedbackformat>1</partiallycorrectfeedbackformat>
+            <incorrectfeedback>Your answer is incorrect.</incorrectfeedback>
+            <incorrectfeedbackformat>1</incorrectfeedbackformat>
+            <answernumbering>ABCD</answernumbering>
+            <shownumcorrect>1</shownumcorrect>
+            <showstandardinstruction>0</showstandardinstruction>
+          </multichoice>
+        </plugin_qtype_multichoice_question>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      <question id="266">
+        <parent>0</parent>
+        <name>Q2</name>
+        <questiontext>The RCR framework identifies a number of different areas of responsibility within research. Please &lt;span&gt;select the three options&lt;/span&gt; below that ARE NOT included in the RCR framework:&lt;br&gt;&lt;strong&gt;(select three)&lt;/strong&gt;&lt;br&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback></generalfeedback>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>1.0000000</defaultmark>
+        <penalty>0.3333333</penalty>
+        <qtype>multichoice</qtype>
+        <length>1</length>
+        <stamp>moodle.learn.eosc-synergy.eu+211026124503+LErGST</stamp>
+        <version>moodle.learn.eosc-synergy.eu+220111152713+B19601</version>
+        <hidden>0</hidden>
+        <timecreated>1635252303</timecreated>
+        <timemodified>1641914833</timemodified>
+        <createdby>30</createdby>
+        <modifiedby>65</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <plugin_qtype_multichoice_question>
+          <answers>
+            <answer id="1035">
+              <answertext>&lt;p dir="ltr" style="text-align: left;"&gt;Research misconduct&lt;br&gt;&lt;/p&gt;</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1036">
+              <answertext>&lt;p dir="ltr" style="text-align: left;"&gt;Protection of human subjects&lt;br&gt;&lt;/p&gt;</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1037">
+              <answertext>&lt;p dir="ltr" style="text-align: left;"&gt;Employment rights&amp;nbsp;&lt;br&gt;&lt;/p&gt;</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.3333333</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1038">
+              <answertext>&lt;p dir="ltr" style="text-align: left;"&gt;Data management practice&lt;br&gt;&lt;/p&gt;</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1039">
+              <answertext>&lt;p dir="ltr" style="text-align: left;"&gt;Salaries and compensation&lt;br&gt;&lt;/p&gt;</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.3333333</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1040">
+              <answertext>&lt;p dir="ltr" style="text-align: left;"&gt;Conflict of interest and commitment&lt;br&gt;&lt;/p&gt;</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1041">
+              <answertext>&lt;p dir="ltr" style="text-align: left;"&gt;Collaborative research&lt;br&gt;&lt;/p&gt;</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1042">
+              <answertext>&lt;p dir="ltr" style="text-align: left;"&gt;Authorship and publications&lt;br&gt;&lt;/p&gt;</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1043">
+              <answertext>&lt;p dir="ltr" style="text-align: left;"&gt;Peer review&lt;br&gt;&lt;/p&gt;</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1044">
+              <answertext>&lt;p dir="ltr" style="text-align: left;"&gt;Career advice and progression&lt;br&gt;&lt;/p&gt;</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.3333333</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+          </answers>
+          <multichoice id="228">
+            <layout>0</layout>
+            <single>0</single>
+            <shuffleanswers>1</shuffleanswers>
+            <correctfeedback>Your answer is correct.</correctfeedback>
+            <correctfeedbackformat>1</correctfeedbackformat>
+            <partiallycorrectfeedback>Your answer is partially correct.</partiallycorrectfeedback>
+            <partiallycorrectfeedbackformat>1</partiallycorrectfeedbackformat>
+            <incorrectfeedback>Your answer is incorrect.</incorrectfeedback>
+            <incorrectfeedbackformat>1</incorrectfeedbackformat>
+            <answernumbering>ABCD</answernumbering>
+            <shownumcorrect>1</shownumcorrect>
+            <showstandardinstruction>0</showstandardinstruction>
+          </multichoice>
+        </plugin_qtype_multichoice_question>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      <question id="267">
+        <parent>0</parent>
+        <name>Q3</name>
+        <questiontext>&lt;p dir="ltr" style="text-align: left;"&gt;&lt;/p&gt;&lt;p&gt;&lt;span lang="EN-GB"&gt;Creating responsible research environments is the responsibility of:&lt;u&gt;&lt;/u&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span lang="EN-GB"&gt;&lt;strong&gt;(Select one)&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;&lt;br&gt;&lt;p&gt;&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback></generalfeedback>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>1.0000000</defaultmark>
+        <penalty>0.3333333</penalty>
+        <qtype>multichoice</qtype>
+        <length>1</length>
+        <stamp>moodle.learn.eosc-synergy.eu+211026124710+Irare0</stamp>
+        <version>moodle.learn.eosc-synergy.eu+220111152845+GbEyzp</version>
+        <hidden>0</hidden>
+        <timecreated>1635252430</timecreated>
+        <timemodified>1641914925</timemodified>
+        <createdby>30</createdby>
+        <modifiedby>65</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <plugin_qtype_multichoice_question>
+          <answers>
+            <answer id="1045">
+              <answertext>&lt;p dir="ltr" style="text-align: left;"&gt;The individual researcher&lt;br&gt;&lt;/p&gt;</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1046">
+              <answertext>&lt;p dir="ltr" style="text-align: left;"&gt;The institution&lt;br&gt;&lt;/p&gt;</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1047">
+              <answertext>&lt;p dir="ltr" style="text-align: left;"&gt;National research infrastructures&lt;br&gt;&lt;/p&gt;</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1048">
+              <answertext>&lt;p dir="ltr" style="text-align: left;"&gt;All options are correct&lt;br&gt;&lt;/p&gt;</answertext>
+              <answerformat>1</answerformat>
+              <fraction>1.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+          </answers>
+          <multichoice id="229">
+            <layout>0</layout>
+            <single>1</single>
+            <shuffleanswers>1</shuffleanswers>
+            <correctfeedback>Your answer is correct.</correctfeedback>
+            <correctfeedbackformat>1</correctfeedbackformat>
+            <partiallycorrectfeedback>Your answer is partially correct.</partiallycorrectfeedback>
+            <partiallycorrectfeedbackformat>1</partiallycorrectfeedbackformat>
+            <incorrectfeedback>Your answer is incorrect.</incorrectfeedback>
+            <incorrectfeedbackformat>1</incorrectfeedbackformat>
+            <answernumbering>ABCD</answernumbering>
+            <shownumcorrect>1</shownumcorrect>
+            <showstandardinstruction>0</showstandardinstruction>
+          </multichoice>
+        </plugin_qtype_multichoice_question>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      <question id="268">
+        <parent>0</parent>
+        <name>Q4</name>
+        <questiontext>&lt;p dir="ltr" style="text-align: left;"&gt;&lt;/p&gt;&lt;p&gt;&lt;span lang="EN-GB"&gt;The Open Science movement emerged in response to a number of different pressures. Pleas&lt;span&gt;e &lt;span style=""&gt;select the five mentioned&lt;/span&gt;&lt;/span&gt; in the presentation that assisted in advancing the Open Science agenda:&lt;u&gt;&lt;/u&gt;&lt;/span&gt;&lt;/p&gt;&lt;span&gt;&lt;strong&gt;(&lt;span style=""&gt;select five)&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;&lt;br&gt;&lt;p&gt;&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback></generalfeedback>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>1.0000000</defaultmark>
+        <penalty>0.3333333</penalty>
+        <qtype>multichoice</qtype>
+        <length>1</length>
+        <stamp>moodle.learn.eosc-synergy.eu+211026125140+Yue244</stamp>
+        <version>moodle.learn.eosc-synergy.eu+220111153044+1w6cSt</version>
+        <hidden>0</hidden>
+        <timecreated>1635252700</timecreated>
+        <timemodified>1641915044</timemodified>
+        <createdby>30</createdby>
+        <modifiedby>65</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <plugin_qtype_multichoice_question>
+          <answers>
+            <answer id="1049">
+              <answertext>&lt;p dir="ltr" style="text-align: left;"&gt;The need for efficiency in research&amp;nbsp;&lt;br&gt;&lt;/p&gt;</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.2000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1050">
+              <answertext>&lt;p dir="ltr" style="text-align: left;"&gt;More transparency in the use of public resources&lt;br&gt;&lt;/p&gt;</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.2000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1051">
+              <answertext>&lt;p dir="ltr" style="text-align: left;"&gt;Pressure from industry to commercialise research products&lt;br&gt;&lt;/p&gt;</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1052">
+              <answertext>&lt;p dir="ltr" style="text-align: left;"&gt;The emergence of citizen science and desire for further public engagement&lt;br&gt;&lt;/p&gt;</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.2000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1053">
+              <answertext>&lt;p dir="ltr" style="text-align: left;"&gt;Recognition of the importance of global research in response to the Sustainable Development Goals&lt;br&gt;&lt;/p&gt;</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.2000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1054">
+              <answertext>&lt;p dir="ltr" style="text-align: left;"&gt;Increased legislation around copyright and ownership of data&lt;br&gt;&lt;/p&gt;</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1055">
+              <answertext>&lt;p dir="ltr" style="text-align: left;"&gt;The need to increase the financial returns from research&lt;br&gt;&lt;/p&gt;</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1056">
+              <answertext>Improve the speed of discovery</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.2000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+          </answers>
+          <multichoice id="230">
+            <layout>0</layout>
+            <single>0</single>
+            <shuffleanswers>1</shuffleanswers>
+            <correctfeedback>Your answer is correct.</correctfeedback>
+            <correctfeedbackformat>1</correctfeedbackformat>
+            <partiallycorrectfeedback>Your answer is partially correct.</partiallycorrectfeedback>
+            <partiallycorrectfeedbackformat>1</partiallycorrectfeedbackformat>
+            <incorrectfeedback>Your answer is incorrect.</incorrectfeedback>
+            <incorrectfeedbackformat>1</incorrectfeedbackformat>
+            <answernumbering>ABCD</answernumbering>
+            <shownumcorrect>1</shownumcorrect>
+            <showstandardinstruction>0</showstandardinstruction>
+          </multichoice>
+        </plugin_qtype_multichoice_question>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      <question id="269">
+        <parent>0</parent>
+        <name>Q5</name>
+        <questiontext>&lt;p dir="ltr" style="text-align: left;"&gt;&lt;/p&gt;&lt;p&gt;&lt;span lang="EN-GB"&gt;Open Science is an umbrella term for a number of different movements. How many different movements were listed in the presentation?&lt;u&gt;&lt;/u&gt;&lt;/span&gt;&lt;/p&gt;&lt;strong&gt;(select one)&lt;/strong&gt;&lt;br&gt;&lt;p&gt;&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback></generalfeedback>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>1.0000000</defaultmark>
+        <penalty>0.3333333</penalty>
+        <qtype>multichoice</qtype>
+        <length>1</length>
+        <stamp>moodle.learn.eosc-synergy.eu+211026125423+GG0Z6y</stamp>
+        <version>moodle.learn.eosc-synergy.eu+220111153714+x2dkuW</version>
+        <hidden>0</hidden>
+        <timecreated>1635252863</timecreated>
+        <timemodified>1641915434</timemodified>
+        <createdby>30</createdby>
+        <modifiedby>65</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <plugin_qtype_multichoice_question>
+          <answers>
+            <answer id="1057">
+              <answertext>&lt;p dir="ltr" style="text-align: left;"&gt;1&lt;/p&gt;</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1058">
+              <answertext>4</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1059">
+              <answertext>&lt;p dir="ltr" style="text-align: left;"&gt;6&lt;/p&gt;</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1060">
+              <answertext>&lt;p dir="ltr" style="text-align: left;"&gt;8&lt;/p&gt;</answertext>
+              <answerformat>1</answerformat>
+              <fraction>1.0000000</fraction>
+              <feedback>&lt;p dir="ltr" style="text-align: left;"&gt;&lt;p&gt;&lt;p&gt;Open Notebooks&lt;span lang="EN-US"&gt;,&amp;nbsp;&lt;/span&gt;Open Peer Review&lt;span lang="EN-US"&gt;,&amp;nbsp;&lt;/span&gt;Open Data&lt;span lang="EN-US"&gt;,&amp;nbsp;&lt;/span&gt;Open Access&lt;span lang="EN-US"&gt;,&amp;nbsp;&lt;/span&gt;Free and Open Source Software/Open Software&lt;span lang="EN-US"&gt;,&amp;nbsp;&lt;/span&gt;Scientific Social Networks&lt;span lang="EN-US"&gt;,&amp;nbsp;&lt;/span&gt;Citizen Science&lt;span lang="EN-US"&gt;&amp;nbsp;and&amp;nbsp;&lt;/span&gt;Open Educational Resources&lt;/p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span lang="EN-GB"&gt;Open Peer Review&lt;u&gt;&lt;/u&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span lang="EN-GB"&gt;Open Data&lt;u&gt;&lt;/u&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span lang="EN-GB"&gt;Open Access&lt;u&gt;&lt;/u&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span lang="EN-GB"&gt;Free and Open Source Software/Open Software&lt;u&gt;&lt;/u&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span lang="EN-GB"&gt;Scientific Social Networks&lt;u&gt;&lt;/u&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span lang="EN-GB"&gt;Citizen Science&lt;u&gt;&lt;/u&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span lang="EN-GB"&gt;Open Educational Resources&lt;u&gt;&lt;/u&gt;&lt;/span&gt;&lt;/p&gt;&lt;br&gt;&lt;/p&gt;</feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+          </answers>
+          <multichoice id="231">
+            <layout>0</layout>
+            <single>1</single>
+            <shuffleanswers>1</shuffleanswers>
+            <correctfeedback>Your answer is correct.</correctfeedback>
+            <correctfeedbackformat>1</correctfeedbackformat>
+            <partiallycorrectfeedback>Your answer is partially correct.</partiallycorrectfeedback>
+            <partiallycorrectfeedbackformat>1</partiallycorrectfeedbackformat>
+            <incorrectfeedback>Your answer is incorrect.</incorrectfeedback>
+            <incorrectfeedbackformat>1</incorrectfeedbackformat>
+            <answernumbering>abc</answernumbering>
+            <shownumcorrect>1</shownumcorrect>
+            <showstandardinstruction>0</showstandardinstruction>
+          </multichoice>
+        </plugin_qtype_multichoice_question>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      <question id="270">
+        <parent>0</parent>
+        <name>Q6</name>
+        <questiontext>&lt;p dir="ltr" style="text-align: left;"&gt;&lt;/p&gt;&lt;p&gt;&lt;span lang="EN-GB"&gt;Please select the two sentences that describe the Open Science movement:&lt;u&gt;&lt;/u&gt;&lt;/span&gt;&lt;/p&gt;&lt;strong&gt;(select two)&lt;/strong&gt;&lt;br&gt;&lt;p&gt;&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback></generalfeedback>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>1.0000000</defaultmark>
+        <penalty>0.3333333</penalty>
+        <qtype>multichoice</qtype>
+        <length>1</length>
+        <stamp>moodle.learn.eosc-synergy.eu+211026125609+MkRRN0</stamp>
+        <version>moodle.learn.eosc-synergy.eu+220111153829+ZpnyJB</version>
+        <hidden>0</hidden>
+        <timecreated>1635252969</timecreated>
+        <timemodified>1641915509</timemodified>
+        <createdby>30</createdby>
+        <modifiedby>65</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <plugin_qtype_multichoice_question>
+          <answers>
+            <answer id="1061">
+              <answertext>&lt;p dir="ltr" style="text-align: left;"&gt;Open Science activities occur separately from responsible conduct of research activities&lt;br&gt;&lt;/p&gt;</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1062">
+              <answertext>&lt;p dir="ltr" style="text-align: left;"&gt;Different aspects of open behaviours occur at different stages throughout the research lifecycle&lt;br&gt;&lt;/p&gt;</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.5000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1063">
+              <answertext>&lt;p dir="ltr" style="text-align: left;"&gt;Openness in research is driven by different motivations to responsible conduct of research&lt;br&gt;&lt;/p&gt;</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1064">
+              <answertext>&lt;p dir="ltr" style="text-align: left;"&gt;Open Science activities are a progression and extension of responsible conduct of research activities&lt;br&gt;&lt;/p&gt;</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.5000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1065">
+              <answertext>&lt;p dir="ltr" style="text-align: left;"&gt;Openness in research requires that all resources be made maximally open at all times&lt;br&gt;&lt;/p&gt;</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+          </answers>
+          <multichoice id="232">
+            <layout>0</layout>
+            <single>0</single>
+            <shuffleanswers>1</shuffleanswers>
+            <correctfeedback>Your answer is correct.</correctfeedback>
+            <correctfeedbackformat>1</correctfeedbackformat>
+            <partiallycorrectfeedback>Your answer is partially correct.</partiallycorrectfeedback>
+            <partiallycorrectfeedbackformat>1</partiallycorrectfeedbackformat>
+            <incorrectfeedback>Your answer is incorrect.</incorrectfeedback>
+            <incorrectfeedbackformat>1</incorrectfeedbackformat>
+            <answernumbering>ABCD</answernumbering>
+            <shownumcorrect>1</shownumcorrect>
+            <showstandardinstruction>0</showstandardinstruction>
+          </multichoice>
+        </plugin_qtype_multichoice_question>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      <question id="271">
+        <parent>0</parent>
+        <name>Q7</name>
+        <questiontext>&lt;p dir="ltr" style="text-align: left;"&gt;&lt;/p&gt;&lt;p&gt;&lt;span lang="EN-GB"&gt;Responsible Research and Innovation (RRI) was the third framework introduced in the presentation. Please select three elements that describe RRI:&lt;u&gt;&lt;/u&gt;&lt;/span&gt;&lt;/p&gt;&lt;strong&gt;(select three)&lt;/strong&gt;&lt;br&gt;&lt;p&gt;&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback></generalfeedback>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>1.0000000</defaultmark>
+        <penalty>0.3333333</penalty>
+        <qtype>multichoice</qtype>
+        <length>1</length>
+        <stamp>moodle.learn.eosc-synergy.eu+211026130040+PRE0l0</stamp>
+        <version>moodle.learn.eosc-synergy.eu+220111154120+jJL3Dq</version>
+        <hidden>0</hidden>
+        <timecreated>1635253240</timecreated>
+        <timemodified>1641915680</timemodified>
+        <createdby>30</createdby>
+        <modifiedby>65</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <plugin_qtype_multichoice_question>
+          <answers>
+            <answer id="1066">
+              <answertext>&lt;p dir="ltr" style="text-align: left;"&gt;Research should be co-produced with societal actors&lt;br&gt;&lt;/p&gt;</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.3333333</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1067">
+              <answertext>&lt;p dir="ltr" style="text-align: left;"&gt;Innovation products should be owned by societal actors&lt;br&gt;&lt;/p&gt;</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1068">
+              <answertext>&lt;p dir="ltr" style="text-align: left;"&gt;Innovation products should not be commercialised&amp;nbsp;&lt;br&gt;&lt;/p&gt;</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1069">
+              <answertext>&lt;p dir="ltr" style="text-align: left;"&gt;Research and innovation products should reflect societal desirability&lt;br&gt;&lt;/p&gt;</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.3333333</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1070">
+              <answertext>&lt;p dir="ltr" style="text-align: left;"&gt;Research and innovation products should be socially acceptable and sustainable&lt;br&gt;&lt;/p&gt;</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1071">
+              <answertext>&lt;p dir="ltr" style="text-align: left;"&gt;Research ceases to be the responsibility of the researcher/research institution once it enters into innovation pathways&lt;br&gt;&lt;/p&gt;</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.3333333</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+          </answers>
+          <multichoice id="233">
+            <layout>0</layout>
+            <single>0</single>
+            <shuffleanswers>1</shuffleanswers>
+            <correctfeedback>Your answer is correct.</correctfeedback>
+            <correctfeedbackformat>1</correctfeedbackformat>
+            <partiallycorrectfeedback>Your answer is partially correct.</partiallycorrectfeedback>
+            <partiallycorrectfeedbackformat>1</partiallycorrectfeedbackformat>
+            <incorrectfeedback>Your answer is incorrect.</incorrectfeedback>
+            <incorrectfeedbackformat>1</incorrectfeedbackformat>
+            <answernumbering>ABCD</answernumbering>
+            <shownumcorrect>1</shownumcorrect>
+            <showstandardinstruction>0</showstandardinstruction>
+          </multichoice>
+        </plugin_qtype_multichoice_question>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      <question id="272">
+        <parent>0</parent>
+        <name>Q8</name>
+        <questiontext>&lt;p dir="ltr" style="text-align: left;"&gt;&lt;p&gt;&lt;span lang="EN-GB"&gt;Data stewards play an important role in safeguarding responsible research practices. Within the RCR framework they can actively work with researchers to discuss misconduct through data management and the implications of daily data decisions on research outputs. Select three practical actions mentioned in the presentation that data stewards can undertake to further RCR in their institution:&lt;u&gt;&lt;/u&gt;&lt;/span&gt;&lt;/p&gt;&lt;br&gt;&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback></generalfeedback>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>1.0000000</defaultmark>
+        <penalty>0.3333333</penalty>
+        <qtype>multichoice</qtype>
+        <length>1</length>
+        <stamp>moodle.learn.eosc-synergy.eu+211026130333+U5tyf0</stamp>
+        <version>moodle.learn.eosc-synergy.eu+211026130333+OGEnSm</version>
+        <hidden>0</hidden>
+        <timecreated>1635253413</timecreated>
+        <timemodified>1635253413</timemodified>
+        <createdby>30</createdby>
+        <modifiedby>30</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <plugin_qtype_multichoice_question>
+          <answers>
+            <answer id="1072">
+              <answertext>&lt;p dir="ltr" style="text-align: left;"&gt;Assist researchers with data management plans&lt;br&gt;&lt;/p&gt;</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.3333333</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1073">
+              <answertext>&lt;p dir="ltr" style="text-align: left;"&gt;Stop researchers from sharing data outside of institutional repositories&amp;nbsp;&lt;br&gt;&lt;/p&gt;</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1074">
+              <answertext>&lt;p dir="ltr" style="text-align: left;"&gt;Provide legal advice on data sharing and copyright&lt;br&gt;&lt;/p&gt;</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1075">
+              <answertext>&lt;p dir="ltr" style="text-align: left;"&gt;Encourage researchers to regularly revisit and reflect on their data management plans&lt;br&gt;&lt;/p&gt;</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.3333333</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1076">
+              <answertext>&lt;p dir="ltr" style="text-align: left;"&gt;Undertake training and RCR advocacy&lt;br&gt;&lt;/p&gt;</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1077">
+              <answertext>Form a link between data management practices within different institutions during collaborative projects&lt;p dir="ltr" style="text-align: left;"&gt;Research ceases to be the responsibility of the researcher/research institution once it enters into innovation pathways&lt;br&gt;&lt;/p&gt;</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.3333333</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+          </answers>
+          <multichoice id="234">
+            <layout>0</layout>
+            <single>0</single>
+            <shuffleanswers>1</shuffleanswers>
+            <correctfeedback>Your answer is correct.</correctfeedback>
+            <correctfeedbackformat>1</correctfeedbackformat>
+            <partiallycorrectfeedback>Your answer is partially correct.</partiallycorrectfeedback>
+            <partiallycorrectfeedbackformat>1</partiallycorrectfeedbackformat>
+            <incorrectfeedback>Your answer is incorrect.</incorrectfeedback>
+            <incorrectfeedbackformat>1</incorrectfeedbackformat>
+            <answernumbering>ABCD</answernumbering>
+            <shownumcorrect>1</shownumcorrect>
+            <showstandardinstruction>0</showstandardinstruction>
+          </multichoice>
+        </plugin_qtype_multichoice_question>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      <question id="273">
+        <parent>0</parent>
+        <name>Q8</name>
+        <questiontext>Data stewards play an important role in safeguarding responsible research practices. Within the RCR framework they can actively work with researchers to discuss misconduct through data management and the implications of daily data decisions on research outputs. Select three practical actions mentioned in the presentation that data stewards can undertake to further RCR in their institution:&lt;br&gt;&lt;br&gt;&lt;strong&gt;(Select three)&lt;/strong&gt;&lt;br&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback></generalfeedback>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>1.0000000</defaultmark>
+        <penalty>0.3333333</penalty>
+        <qtype>multichoice</qtype>
+        <length>1</length>
+        <stamp>moodle.learn.eosc-synergy.eu+211026130400+YFnSlr</stamp>
+        <version>moodle.learn.eosc-synergy.eu+220111154241+59QVp6</version>
+        <hidden>0</hidden>
+        <timecreated>1635253440</timecreated>
+        <timemodified>1641915761</timemodified>
+        <createdby>30</createdby>
+        <modifiedby>65</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <plugin_qtype_multichoice_question>
+          <answers>
+            <answer id="1078">
+              <answertext>&lt;p dir="ltr" style="text-align: left;"&gt;Assist researchers with data management plans&lt;br&gt;&lt;/p&gt;</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.3333333</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1079">
+              <answertext>&lt;p dir="ltr" style="text-align: left;"&gt;Stop researchers from sharing data outside of institutional repositories&amp;nbsp;&lt;br&gt;&lt;/p&gt;</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1080">
+              <answertext>&lt;p dir="ltr" style="text-align: left;"&gt;Provide legal advice on data sharing and copyright&lt;br&gt;&lt;/p&gt;</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1081">
+              <answertext>&lt;p dir="ltr" style="text-align: left;"&gt;Encourage researchers to regularly revisit and reflect on their data management plans&lt;br&gt;&lt;/p&gt;</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.3333333</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1082">
+              <answertext>&lt;p dir="ltr" style="text-align: left;"&gt;Undertake training and RCR advocacy&lt;br&gt;&lt;/p&gt;</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1083">
+              <answertext>Form a link between data management practices within different institutions during collaborative projects&lt;p dir="ltr" style="text-align: left;"&gt;Research ceases to be the responsibility of the researcher/research institution once it enters into innovation pathways&lt;br&gt;&lt;/p&gt;</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.3333333</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+          </answers>
+          <multichoice id="235">
+            <layout>0</layout>
+            <single>0</single>
+            <shuffleanswers>1</shuffleanswers>
+            <correctfeedback>Your answer is correct.</correctfeedback>
+            <correctfeedbackformat>1</correctfeedbackformat>
+            <partiallycorrectfeedback>Your answer is partially correct.</partiallycorrectfeedback>
+            <partiallycorrectfeedbackformat>1</partiallycorrectfeedbackformat>
+            <incorrectfeedback>Your answer is incorrect.</incorrectfeedback>
+            <incorrectfeedbackformat>1</incorrectfeedbackformat>
+            <answernumbering>ABCD</answernumbering>
+            <shownumcorrect>1</shownumcorrect>
+            <showstandardinstruction>0</showstandardinstruction>
+          </multichoice>
+        </plugin_qtype_multichoice_question>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      <question id="274">
+        <parent>0</parent>
+        <name>Q9</name>
+        <questiontext>&lt;p dir="ltr" style="text-align: left;"&gt;&lt;/p&gt;&lt;p&gt;&lt;span lang="EN-GB"&gt;While the Open Science landscape is developing rapidly, there is still much to be done to ensure unrestricted and equitable access to open research resources. There are a number of ways through which data stewards can assist in the development of the Open Science landscape. Select the three that were mentioned in the presentation:&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span lang="EN-GB"&gt;&lt;strong&gt;(Select three)&amp;nbsp;&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback></generalfeedback>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>1.0000000</defaultmark>
+        <penalty>0.3333333</penalty>
+        <qtype>multichoice</qtype>
+        <length>1</length>
+        <stamp>moodle.learn.eosc-synergy.eu+211026130611+QWFggq</stamp>
+        <version>moodle.learn.eosc-synergy.eu+220111154422+t7qj3Z</version>
+        <hidden>0</hidden>
+        <timecreated>1635253571</timecreated>
+        <timemodified>1641915862</timemodified>
+        <createdby>30</createdby>
+        <modifiedby>65</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <plugin_qtype_multichoice_question>
+          <answers>
+            <answer id="1084">
+              <answertext>&lt;p dir="ltr" style="text-align: left;"&gt;Always question how research can be made maximally Open and FAIR&lt;br&gt;&lt;/p&gt;</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.3333333</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1085">
+              <answertext>&lt;p dir="ltr" style="text-align: left;"&gt;Test Open Science platforms and tools&lt;br&gt;&lt;/p&gt;</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.3333333</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1086">
+              <answertext>&lt;p dir="ltr" style="text-align: left;"&gt;Ask about access to platforms and long-term sustainability&lt;br&gt;&lt;/p&gt;</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.3333333</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1087">
+              <answertext>&lt;p dir="ltr" style="text-align: left;"&gt;Develop their own Open Science tools&amp;nbsp;&lt;br&gt;&lt;/p&gt;</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+          </answers>
+          <multichoice id="236">
+            <layout>0</layout>
+            <single>0</single>
+            <shuffleanswers>1</shuffleanswers>
+            <correctfeedback>Your answer is correct.</correctfeedback>
+            <correctfeedbackformat>1</correctfeedbackformat>
+            <partiallycorrectfeedback>Your answer is partially correct.</partiallycorrectfeedback>
+            <partiallycorrectfeedbackformat>1</partiallycorrectfeedbackformat>
+            <incorrectfeedback>Your answer is incorrect.</incorrectfeedback>
+            <incorrectfeedbackformat>1</incorrectfeedbackformat>
+            <answernumbering>ABCD</answernumbering>
+            <shownumcorrect>1</shownumcorrect>
+            <showstandardinstruction>0</showstandardinstruction>
+          </multichoice>
+        </plugin_qtype_multichoice_question>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      <question id="275">
+        <parent>0</parent>
+        <name>Q10</name>
+        <questiontext>While RRI is a new framework of responsibility, there are a number of areas in which data stewards can assist in developing RRI cultures within their institutions. Select three such actions:&lt;br&gt;&lt;br&gt;&lt;strong&gt;(Select three)&lt;/strong&gt;&lt;br&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback></generalfeedback>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>1.0000000</defaultmark>
+        <penalty>0.3333333</penalty>
+        <qtype>multichoice</qtype>
+        <length>1</length>
+        <stamp>moodle.learn.eosc-synergy.eu+211026131125+SLsACC</stamp>
+        <version>moodle.learn.eosc-synergy.eu+220111154608+0s6MID</version>
+        <hidden>0</hidden>
+        <timecreated>1635253885</timecreated>
+        <timemodified>1641915968</timemodified>
+        <createdby>30</createdby>
+        <modifiedby>65</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <plugin_qtype_multichoice_question>
+          <answers>
+            <answer id="1088">
+              <answertext>Manage patent applications</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1089">
+              <answertext>&lt;p dir="ltr" style="text-align: left;"&gt;Engage with innovators within institutions to discuss data management&lt;br&gt;&lt;/p&gt;</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.3333333</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1090">
+              <answertext>&lt;p dir="ltr" style="text-align: left;"&gt;Monitor institutional repositories to ensure responsible data re-use&lt;br&gt;&lt;/p&gt;</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.3333333</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1091">
+              <answertext>&lt;p dir="ltr" style="text-align: left;"&gt;Review copyright submissions&lt;br&gt;&lt;/p&gt;</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1092">
+              <answertext>&lt;p dir="ltr" style="text-align: left;"&gt;Ensure that curation supports RRI priority areas&lt;br&gt;&lt;/p&gt;</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.3333333</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1093">
+              <answertext>&lt;p dir="ltr" style="text-align: left;"&gt;Provide technical reviews of innovation products&lt;br&gt;&lt;/p&gt;</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1094">
+              <answertext>&lt;p dir="ltr"&gt;&lt;span style="font-size: 0.9375rem;"&gt;Stop commercial use of institutionally-held datasets&lt;/span&gt;&lt;/p&gt;</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+          </answers>
+          <multichoice id="237">
+            <layout>0</layout>
+            <single>0</single>
+            <shuffleanswers>1</shuffleanswers>
+            <correctfeedback>Your answer is correct.</correctfeedback>
+            <correctfeedbackformat>1</correctfeedbackformat>
+            <partiallycorrectfeedback>Your answer is partially correct.</partiallycorrectfeedback>
+            <partiallycorrectfeedbackformat>1</partiallycorrectfeedbackformat>
+            <incorrectfeedback>Your answer is incorrect.</incorrectfeedback>
+            <incorrectfeedbackformat>1</incorrectfeedbackformat>
+            <answernumbering>ABCD</answernumbering>
+            <shownumcorrect>1</shownumcorrect>
+            <showstandardinstruction>0</showstandardinstruction>
+          </multichoice>
+        </plugin_qtype_multichoice_question>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      <question id="283">
+        <parent>0</parent>
+        <name>Q1</name>
+        <questiontext>&lt;p dir="ltr" style="text-align: left;"&gt;&lt;span id="docs-internal-guid-1b05c201-7fff-d3aa-0788-376b23bb19a0"&gt;Data Stewards must have extensive domain-specific expertise (e.g., Social Sciences, Life Sciences).&amp;nbsp;&lt;/span&gt;&lt;br&gt;&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback></generalfeedback>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>1.0000000</defaultmark>
+        <penalty>1.0000000</penalty>
+        <qtype>truefalse</qtype>
+        <length>1</length>
+        <stamp>moodle.learn.eosc-synergy.eu+211126110947+jvZ3Gk</stamp>
+        <version>moodle.learn.eosc-synergy.eu+211126112053+OduadK</version>
+        <hidden>0</hidden>
+        <timecreated>1637924987</timecreated>
+        <timemodified>1637925652</timemodified>
+        <createdby>30</createdby>
+        <modifiedby>30</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <plugin_qtype_truefalse_question>
+          <answers>
+            <answer id="1129">
+              <answertext>True</answertext>
+              <answerformat>0</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1130">
+              <answertext>False</answertext>
+              <answerformat>0</answerformat>
+              <fraction>1.0000000</fraction>
+              <feedback>&lt;p dir="ltr" style="text-align: left;"&gt;&lt;span id="docs-internal-guid-19e8e1cb-7fff-67b4-24bb-38748a440dc6"&gt;&lt;/span&gt;&lt;/p&gt;&lt;p dir="ltr"&gt;False. While many Data Stewards have strong research backgrounds and expertise in specific domains, others have expertise in research data management and curation more generally.&lt;/p&gt;&lt;img src="@@PLUGINFILE@@/Roles%20of%20DS.png" alt="The focus areas of data stewards and mapping of different data steward roles (https://doi.org/10.5281/zenodo.346055 " width="431" height="397" class="img-fluid atto_image_button_text-bottom"&gt;&lt;br&gt;&lt;div data-canvas-width="11.414117647058825"&gt;&lt;span style="font-size: 0.9375rem;"&gt;The&amp;nbsp;&lt;/span&gt;&lt;span style="font-size: 0.9375rem;"&gt;focus areas&amp;nbsp;&lt;/span&gt;&lt;span style="font-size: 0.9375rem;"&gt;of data stewards and mapping&amp;nbsp;&lt;/span&gt;&lt;span style="font-size: 0.9375rem;"&gt;of different data steward roles&lt;/span&gt;&lt;/div&gt;&lt;div data-canvas-width="222.97098352941177"&gt;Image credit: https://doi.org/10.5281/zenodo.3460552&lt;/div&gt;&lt;br&gt;&lt;br&gt;&lt;p&gt;&lt;/p&gt;</feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+          </answers>
+          <truefalse id="29">
+            <trueanswer>1129</trueanswer>
+            <falseanswer>1130</falseanswer>
+          </truefalse>
+        </plugin_qtype_truefalse_question>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      <question id="284">
+        <parent>0</parent>
+        <name>Q2</name>
+        <questiontext>&lt;p dir="ltr" style="text-align: left;"&gt;&lt;span id="docs-internal-guid-f4983288-7fff-9b33-4d69-91692cb5bd40"&gt;Which of the following work areas may apply to the role of a Data Steward?&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p dir="ltr" style="text-align: left;"&gt;&lt;span&gt;Choose one answer.&amp;nbsp;&lt;/span&gt;&lt;br&gt;&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback>&lt;p dir="ltr" style="text-align: left;"&gt;&lt;span id="docs-internal-guid-893e6600-7fff-8e2d-a6e2-7367e66a52e1"&gt;Correct answer A. Data Stewards can be involved in a very broad range of research activities with some focusing more on policy development and interpretation; others focusing more on technical infrastructure provision; and others who are embedded in research teams and helping to define workflows and software.&lt;/span&gt;&lt;br&gt;&lt;/p&gt;&lt;p dir="ltr" style="text-align: left;"&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p dir="ltr" style="text-align: left;"&gt;&lt;span&gt;&lt;img src="@@PLUGINFILE@@/Roles%20of%20DS.png" alt="Data skills landscape " width="941" height="495" class="img-fluid atto_image_button_text-bottom"&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p dir="ltr" style="text-align: left;"&gt;&lt;span&gt;&lt;span id="docs-internal-guid-2de6c81c-7fff-f863-449c-72fb49e85e41"&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p dir="ltr"&gt;Image credit: ‘RDM Skills’, Sarah Jones, &lt;a href="https://www.slideshare.net/sjDCC/rdm-skills"&gt;https://www.slideshare.net/sjDCC/rdm-skills&lt;/a&gt;&lt;/p&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;p&gt;&lt;/p&gt;</generalfeedback>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>1.0000000</defaultmark>
+        <penalty>0.3333333</penalty>
+        <qtype>multichoice</qtype>
+        <length>1</length>
+        <stamp>moodle.learn.eosc-synergy.eu+211126111617+EChkrV</stamp>
+        <version>moodle.learn.eosc-synergy.eu+220105163214+mqQ3kK</version>
+        <hidden>0</hidden>
+        <timecreated>1637925377</timecreated>
+        <timemodified>1641400334</timemodified>
+        <createdby>30</createdby>
+        <modifiedby>65</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <plugin_qtype_multichoice_question>
+          <answers>
+            <answer id="1131">
+              <answertext>Policy development, p&lt;span id="docs-internal-guid-47224ce9-7fff-255f-0961-e4d9bb0a7c58"&gt;roviding training and guidance, d&lt;span id="docs-internal-guid-b5b4f7b6-7fff-8503-95cf-0ac38bdda79a"&gt;efining research workflows, d&lt;span id="docs-internal-guid-5e13bd5f-7fff-c6da-5321-9e796e4c706f"&gt;eveloping and managing research software, d&lt;span id="docs-internal-guid-2d65bee8-7fff-ff34-c924-090c3d3b3fbd"&gt;eveloping and delivery research infrastructure.&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;</answertext>
+              <answerformat>1</answerformat>
+              <fraction>1.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1132">
+              <answertext>Policy development and p&lt;span id="docs-internal-guid-47224ce9-7fff-255f-0961-e4d9bb0a7c58"&gt;roviding training and guidance.&lt;/span&gt;</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1133">
+              <answertext>&lt;p dir="ltr" style="text-align: left;"&gt;&lt;span id="docs-internal-guid-b5b4f7b6-7fff-8503-95cf-0ac38bdda79a"&gt;&lt;span id="docs-internal-guid-5e13bd5f-7fff-c6da-5321-9e796e4c706f"&gt;Developing and managing research software and d&lt;span id="docs-internal-guid-2d65bee8-7fff-ff34-c924-090c3d3b3fbd"&gt;eveloping and delivery research infrastructure&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/p&gt;</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1134">
+              <answertext>&lt;p dir="ltr" style="text-align: left;"&gt;None of the answers are correct&lt;/p&gt;</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1135">
+              <answertext>&lt;p dir="ltr" style="text-align: left;"&gt;&lt;span id="docs-internal-guid-47224ce9-7fff-255f-0961-e4d9bb0a7c58"&gt;Providing training and guidance&lt;/span&gt;&lt;br&gt;&lt;/p&gt;</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+          </answers>
+          <multichoice id="245">
+            <layout>0</layout>
+            <single>1</single>
+            <shuffleanswers>1</shuffleanswers>
+            <correctfeedback>Your answer is correct.</correctfeedback>
+            <correctfeedbackformat>1</correctfeedbackformat>
+            <partiallycorrectfeedback>Your answer is partially correct.</partiallycorrectfeedback>
+            <partiallycorrectfeedbackformat>1</partiallycorrectfeedbackformat>
+            <incorrectfeedback>Your answer is incorrect.</incorrectfeedback>
+            <incorrectfeedbackformat>1</incorrectfeedbackformat>
+            <answernumbering>ABCD</answernumbering>
+            <shownumcorrect>1</shownumcorrect>
+            <showstandardinstruction>0</showstandardinstruction>
+          </multichoice>
+        </plugin_qtype_multichoice_question>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      <question id="285">
+        <parent>0</parent>
+        <name>Q1</name>
+        <questiontext>&lt;p dir="ltr" style="text-align: left;"&gt;&lt;span id="docs-internal-guid-5bf1d52e-7fff-c421-ab4f-c7f7d985e7f0"&gt;FAIR data are always openly accessible.&lt;/span&gt;&lt;br&gt;&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback></generalfeedback>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>1.0000000</defaultmark>
+        <penalty>1.0000000</penalty>
+        <qtype>truefalse</qtype>
+        <length>1</length>
+        <stamp>moodle.learn.eosc-synergy.eu+211126113018+auA8SV</stamp>
+        <version>moodle.learn.eosc-synergy.eu+211126113026+C6Oyb7</version>
+        <hidden>0</hidden>
+        <timecreated>1637926218</timecreated>
+        <timemodified>1637926226</timemodified>
+        <createdby>30</createdby>
+        <modifiedby>30</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <plugin_qtype_truefalse_question>
+          <answers>
+            <answer id="1136">
+              <answertext>True</answertext>
+              <answerformat>0</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1137">
+              <answertext>False</answertext>
+              <answerformat>0</answerformat>
+              <fraction>1.0000000</fraction>
+              <feedback>&lt;p dir="ltr" style="text-align: left;"&gt;&lt;span id="docs-internal-guid-65375ceb-7fff-3f6c-f08e-354b8f6d7317"&gt;Open and FAIR are not binary concepts and there can be degrees of both FAIRness and openness. Researchers need to consider exactly how much can be shared, at what points in the research lifecycle and with whom. &lt;/span&gt;&lt;br&gt;&lt;/p&gt;</feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+          </answers>
+          <truefalse id="30">
+            <trueanswer>1136</trueanswer>
+            <falseanswer>1137</falseanswer>
+          </truefalse>
+        </plugin_qtype_truefalse_question>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      <question id="286">
+        <parent>0</parent>
+        <name>Q2</name>
+        <questiontext>&lt;p dir="ltr" style="text-align: left;"&gt;&lt;span id="docs-internal-guid-70f9539e-7fff-915b-1c51-7aa3a388659c"&gt;Closed data can still be made FAIR.&amp;nbsp;&lt;/span&gt;&lt;br&gt;&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback></generalfeedback>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>1.0000000</defaultmark>
+        <penalty>1.0000000</penalty>
+        <qtype>truefalse</qtype>
+        <length>1</length>
+        <stamp>moodle.learn.eosc-synergy.eu+211126113109+3APuJ2</stamp>
+        <version>moodle.learn.eosc-synergy.eu+220111113446+0yrF2J</version>
+        <hidden>0</hidden>
+        <timecreated>1637926269</timecreated>
+        <timemodified>1641900886</timemodified>
+        <createdby>30</createdby>
+        <modifiedby>65</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <plugin_qtype_truefalse_question>
+          <answers>
+            <answer id="1138">
+              <answertext>True</answertext>
+              <answerformat>0</answerformat>
+              <fraction>1.0000000</fraction>
+              <feedback>&lt;p dir="ltr" style="text-align: left;"&gt;&lt;span id="docs-internal-guid-085b6e22-7fff-4107-5f72-a3ec74facffa"&gt;&lt;/span&gt;&lt;/p&gt;&lt;p dir="ltr"&gt;There can be good reasons not to share data (e.g., to respect personal or commercial sensitivities) but in most cases there is something that can be shared such as the metadata description so that people at least know it exists and how they can go about requesting legitimate access.&lt;/p&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;p&gt;&lt;/p&gt;</feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1139">
+              <answertext>False</answertext>
+              <answerformat>0</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+          </answers>
+          <truefalse id="31">
+            <trueanswer>1138</trueanswer>
+            <falseanswer>1139</falseanswer>
+          </truefalse>
+        </plugin_qtype_truefalse_question>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      <question id="287">
+        <parent>0</parent>
+        <name>Q3</name>
+        <questiontext>&lt;p dir="ltr" style="text-align: left;"&gt;&lt;span id="docs-internal-guid-bde35ba7-7fff-7e0c-9378-2ac4c8e90b39"&gt;Research data management only benefits others.&lt;/span&gt;&lt;br&gt;&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback></generalfeedback>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>1.0000000</defaultmark>
+        <penalty>1.0000000</penalty>
+        <qtype>truefalse</qtype>
+        <length>1</length>
+        <stamp>moodle.learn.eosc-synergy.eu+211126113154+dClotN</stamp>
+        <version>moodle.learn.eosc-synergy.eu+211126113154+ipFWnt</version>
+        <hidden>0</hidden>
+        <timecreated>1637926314</timecreated>
+        <timemodified>1637926314</timemodified>
+        <createdby>30</createdby>
+        <modifiedby>30</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <plugin_qtype_truefalse_question>
+          <answers>
+            <answer id="1140">
+              <answertext>True</answertext>
+              <answerformat>0</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1141">
+              <answertext>False</answertext>
+              <answerformat>0</answerformat>
+              <fraction>1.0000000</fraction>
+              <feedback>&lt;p dir="ltr" style="text-align: left;"&gt;&lt;span id="docs-internal-guid-f0a40be4-7fff-dc27-8c44-8abc90d29bd3"&gt;Good research data management is part of good research practice. RDM is vital to support research integrity and it also enables validation of published findings. Remember, that researchers often come back to reuse their own data so they may be the future reusers that benefit!&lt;/span&gt;&lt;br&gt;&lt;/p&gt;</feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+          </answers>
+          <truefalse id="32">
+            <trueanswer>1140</trueanswer>
+            <falseanswer>1141</falseanswer>
+          </truefalse>
+        </plugin_qtype_truefalse_question>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      <question id="288">
+        <parent>0</parent>
+        <name>How does EOSC Synergy support the vision of EOSC in practice?</name>
+        <questiontext>How does EOSC Synergy support the vision of EOSC in practice?</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback></generalfeedback>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>1.0000000</defaultmark>
+        <penalty>0.3333333</penalty>
+        <qtype>multichoice</qtype>
+        <length>1</length>
+        <stamp>moodle.learn.eosc-synergy.eu+211214163603+h1GOUF</stamp>
+        <version>moodle.learn.eosc-synergy.eu+211214163605+rJ8V6P</version>
+        <hidden>0</hidden>
+        <timecreated>1639499763</timecreated>
+        <timemodified>1639499763</timemodified>
+        <createdby>30</createdby>
+        <modifiedby>30</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <plugin_qtype_multichoice_question>
+          <answers>
+            <answer id="1142">
+              <answertext>By providing digital technologies to deliver services to researchers, complying with the transparency and openness principles.</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1143">
+              <answertext>By supporting observational, experimental and simulated data by latest technologies for transfer and storage.</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1144">
+              <answertext>By supporting advanced research projects by cutting-edge computing infrastructures.</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1145">
+              <answertext>By creating state-of-the-art software to enable technology, and streamline collaboration to solve fundamental problems in science and societal challenges.</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1146">
+              <answertext>All of the other options.</answertext>
+              <answerformat>1</answerformat>
+              <fraction>1.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+          </answers>
+          <multichoice id="246">
+            <layout>0</layout>
+            <single>1</single>
+            <shuffleanswers>1</shuffleanswers>
+            <correctfeedback></correctfeedback>
+            <correctfeedbackformat>1</correctfeedbackformat>
+            <partiallycorrectfeedback></partiallycorrectfeedback>
+            <partiallycorrectfeedbackformat>1</partiallycorrectfeedbackformat>
+            <incorrectfeedback></incorrectfeedback>
+            <incorrectfeedbackformat>1</incorrectfeedbackformat>
+            <answernumbering>abc</answernumbering>
+            <shownumcorrect>0</shownumcorrect>
+            <showstandardinstruction>0</showstandardinstruction>
+          </multichoice>
+        </plugin_qtype_multichoice_question>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      <question id="289">
+        <parent>0</parent>
+        <name>Thanks to the EOSC, knowledge infrastructures, such as universities, ...</name>
+        <questiontext>Thanks to the EOSC, knowledge infrastructures, such as universities, libraries, and museums will be able to:</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback></generalfeedback>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>1.0000000</defaultmark>
+        <penalty>0.3333333</penalty>
+        <qtype>multichoice</qtype>
+        <length>1</length>
+        <stamp>moodle.learn.eosc-synergy.eu+211214163605+jVwDmw</stamp>
+        <version>moodle.learn.eosc-synergy.eu+211214163606+LuMG1E</version>
+        <hidden>0</hidden>
+        <timecreated>1639499765</timecreated>
+        <timemodified>1639499765</timemodified>
+        <createdby>30</createdby>
+        <modifiedby>30</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <plugin_qtype_multichoice_question>
+          <answers>
+            <answer id="1147">
+              <answertext>Exchange data</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1148">
+              <answertext>Find data </answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1149">
+              <answertext>Have access to data </answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1150">
+              <answertext>Reproduce data </answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1151">
+              <answertext>All of the above </answertext>
+              <answerformat>1</answerformat>
+              <fraction>1.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+          </answers>
+          <multichoice id="247">
+            <layout>0</layout>
+            <single>1</single>
+            <shuffleanswers>1</shuffleanswers>
+            <correctfeedback></correctfeedback>
+            <correctfeedbackformat>1</correctfeedbackformat>
+            <partiallycorrectfeedback></partiallycorrectfeedback>
+            <partiallycorrectfeedbackformat>1</partiallycorrectfeedbackformat>
+            <incorrectfeedback></incorrectfeedback>
+            <incorrectfeedbackformat>1</incorrectfeedbackformat>
+            <answernumbering>abc</answernumbering>
+            <shownumcorrect>0</shownumcorrect>
+            <showstandardinstruction>0</showstandardinstruction>
+          </multichoice>
+        </plugin_qtype_multichoice_question>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      <question id="290">
+        <parent>0</parent>
+        <name>EOSC is a European programme which:</name>
+        <questiontext>EOSC is a European programme which:</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback></generalfeedback>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>1.0000000</defaultmark>
+        <penalty>0.3333333</penalty>
+        <qtype>multichoice</qtype>
+        <length>1</length>
+        <stamp>moodle.learn.eosc-synergy.eu+211214163606+aXkE06</stamp>
+        <version>moodle.learn.eosc-synergy.eu+211214163607+7hiGIA</version>
+        <hidden>0</hidden>
+        <timecreated>1639499766</timecreated>
+        <timemodified>1639499766</timemodified>
+        <createdby>30</createdby>
+        <modifiedby>30</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <plugin_qtype_multichoice_question>
+          <answers>
+            <answer id="1152">
+              <answertext>Is limited to Europe only.</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1153">
+              <answertext>Is limited to the founding member states of the EU.</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1154">
+              <answertext>Extends beyond Europe with different stakeholders involved as partners.</answertext>
+              <answerformat>1</answerformat>
+              <fraction>1.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1155">
+              <answertext>Is exclusively meant for countries with the highest investment in research and innovation in Europe.</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+          </answers>
+          <multichoice id="248">
+            <layout>0</layout>
+            <single>1</single>
+            <shuffleanswers>1</shuffleanswers>
+            <correctfeedback></correctfeedback>
+            <correctfeedbackformat>1</correctfeedbackformat>
+            <partiallycorrectfeedback></partiallycorrectfeedback>
+            <partiallycorrectfeedbackformat>1</partiallycorrectfeedbackformat>
+            <incorrectfeedback></incorrectfeedback>
+            <incorrectfeedbackformat>1</incorrectfeedbackformat>
+            <answernumbering>abc</answernumbering>
+            <shownumcorrect>0</shownumcorrect>
+            <showstandardinstruction>0</showstandardinstruction>
+          </multichoice>
+        </plugin_qtype_multichoice_question>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      <question id="291">
+        <parent>0</parent>
+        <name>What is FAIR about? </name>
+        <questiontext>What is FAIR about? </questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback></generalfeedback>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>1.0000000</defaultmark>
+        <penalty>0.3333333</penalty>
+        <qtype>multichoice</qtype>
+        <length>1</length>
+        <stamp>moodle.learn.eosc-synergy.eu+211214163607+bej69g</stamp>
+        <version>moodle.learn.eosc-synergy.eu+211214163608+VqWOs1</version>
+        <hidden>0</hidden>
+        <timecreated>1639499767</timecreated>
+        <timemodified>1639499767</timemodified>
+        <createdby>30</createdby>
+        <modifiedby>30</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <plugin_qtype_multichoice_question>
+          <answers>
+            <answer id="1156">
+              <answertext>Official guidelines for data management </answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1157">
+              <answertext>Exclusively open data </answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1158">
+              <answertext>A set of best practices for sharing research data</answertext>
+              <answerformat>1</answerformat>
+              <fraction>1.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1159">
+              <answertext>Mandatory research standards </answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+          </answers>
+          <multichoice id="249">
+            <layout>0</layout>
+            <single>1</single>
+            <shuffleanswers>1</shuffleanswers>
+            <correctfeedback></correctfeedback>
+            <correctfeedbackformat>1</correctfeedbackformat>
+            <partiallycorrectfeedback></partiallycorrectfeedback>
+            <partiallycorrectfeedbackformat>1</partiallycorrectfeedbackformat>
+            <incorrectfeedback></incorrectfeedback>
+            <incorrectfeedbackformat>1</incorrectfeedbackformat>
+            <answernumbering>abc</answernumbering>
+            <shownumcorrect>0</shownumcorrect>
+            <showstandardinstruction>0</showstandardinstruction>
+          </multichoice>
+        </plugin_qtype_multichoice_question>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      <question id="292">
+        <parent>0</parent>
+        <name>What are some of the practical examples of transparency and openness to which...</name>
+        <questiontext>What are some of the practical examples of transparency and openness to which EOSC-Synergy is committed?</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback></generalfeedback>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>1.0000000</defaultmark>
+        <penalty>0.3333333</penalty>
+        <qtype>multichoice</qtype>
+        <length>1</length>
+        <stamp>moodle.learn.eosc-synergy.eu+211214163609+mc7mak</stamp>
+        <version>moodle.learn.eosc-synergy.eu+211214163611+7oN6R9</version>
+        <hidden>0</hidden>
+        <timecreated>1639499769</timecreated>
+        <timemodified>1639499769</timemodified>
+        <createdby>30</createdby>
+        <modifiedby>30</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <plugin_qtype_multichoice_question>
+          <answers>
+            <answer id="1160">
+              <answertext>Making services freely available to all European researchers.</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1161">
+              <answertext>All of the other options.</answertext>
+              <answerformat>1</answerformat>
+              <fraction>1.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1162">
+              <answertext>Use of open-source software.</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1163">
+              <answertext>Integrating scientific applications of EOSC federation services.</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+          </answers>
+          <multichoice id="250">
+            <layout>0</layout>
+            <single>1</single>
+            <shuffleanswers>1</shuffleanswers>
+            <correctfeedback></correctfeedback>
+            <correctfeedbackformat>1</correctfeedbackformat>
+            <partiallycorrectfeedback></partiallycorrectfeedback>
+            <partiallycorrectfeedbackformat>1</partiallycorrectfeedbackformat>
+            <incorrectfeedback></incorrectfeedback>
+            <incorrectfeedbackformat>1</incorrectfeedbackformat>
+            <answernumbering>abc</answernumbering>
+            <shownumcorrect>0</shownumcorrect>
+            <showstandardinstruction>0</showstandardinstruction>
+          </multichoice>
+        </plugin_qtype_multichoice_question>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      <question id="293">
+        <parent>0</parent>
+        <name>A data management plan involves the following elements: </name>
+        <questiontext>A data management plan involves the following elements: </questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback></generalfeedback>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>1.0000000</defaultmark>
+        <penalty>0.3333333</penalty>
+        <qtype>multichoice</qtype>
+        <length>1</length>
+        <stamp>moodle.learn.eosc-synergy.eu+211214163612+n3dVho</stamp>
+        <version>moodle.learn.eosc-synergy.eu+211214163612+WCVu3X</version>
+        <hidden>0</hidden>
+        <timecreated>1639499772</timecreated>
+        <timemodified>1639499772</timemodified>
+        <createdby>30</createdby>
+        <modifiedby>30</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <plugin_qtype_multichoice_question>
+          <answers>
+            <answer id="1164">
+              <answertext>Improves access, discovery and reuse of your research.</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1165">
+              <answertext>Defines the storage and preservation of data.</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1166">
+              <answertext>Establishes data maintenance and documentation practices. </answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1167">
+              <answertext>All of the other options.</answertext>
+              <answerformat>1</answerformat>
+              <fraction>1.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+          </answers>
+          <multichoice id="251">
+            <layout>0</layout>
+            <single>1</single>
+            <shuffleanswers>1</shuffleanswers>
+            <correctfeedback></correctfeedback>
+            <correctfeedbackformat>1</correctfeedbackformat>
+            <partiallycorrectfeedback></partiallycorrectfeedback>
+            <partiallycorrectfeedbackformat>1</partiallycorrectfeedbackformat>
+            <incorrectfeedback></incorrectfeedback>
+            <incorrectfeedbackformat>1</incorrectfeedbackformat>
+            <answernumbering>abc</answernumbering>
+            <shownumcorrect>0</shownumcorrect>
+            <showstandardinstruction>0</showstandardinstruction>
+          </multichoice>
+        </plugin_qtype_multichoice_question>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      <question id="294">
+        <parent>0</parent>
+        <name>Which of the following statements is false?</name>
+        <questiontext>Which of the following statements is false?</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback></generalfeedback>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>1.0000000</defaultmark>
+        <penalty>0.3333333</penalty>
+        <qtype>multichoice</qtype>
+        <length>1</length>
+        <stamp>moodle.learn.eosc-synergy.eu+211214163612+XVn5KI</stamp>
+        <version>moodle.learn.eosc-synergy.eu+211214163613+6UqEGp</version>
+        <hidden>0</hidden>
+        <timecreated>1639499772</timecreated>
+        <timemodified>1639499772</timemodified>
+        <createdby>30</createdby>
+        <modifiedby>30</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <plugin_qtype_multichoice_question>
+          <answers>
+            <answer id="1168">
+              <answertext>EOSC stimulates citizen science.</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1169">
+              <answertext>EOSC helps facilitate Open Science in Europe.</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1170">
+              <answertext>EOSC supports research findings that are always openly shared with everyone.</answertext>
+              <answerformat>1</answerformat>
+              <fraction>1.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1171">
+              <answertext>E-infrastructures constitute the core of the EOSC.</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+          </answers>
+          <multichoice id="252">
+            <layout>0</layout>
+            <single>1</single>
+            <shuffleanswers>1</shuffleanswers>
+            <correctfeedback></correctfeedback>
+            <correctfeedbackformat>1</correctfeedbackformat>
+            <partiallycorrectfeedback></partiallycorrectfeedback>
+            <partiallycorrectfeedbackformat>1</partiallycorrectfeedbackformat>
+            <incorrectfeedback></incorrectfeedback>
+            <incorrectfeedbackformat>1</incorrectfeedbackformat>
+            <answernumbering>abc</answernumbering>
+            <shownumcorrect>0</shownumcorrect>
+            <showstandardinstruction>0</showstandardinstruction>
+          </multichoice>
+        </plugin_qtype_multichoice_question>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      <question id="295">
+        <parent>0</parent>
+        <name>When collecting or creating research data you should do it in a way, so that ...</name>
+        <questiontext>When collecting or creating research data you should do it in a way, so that others can understand your data and reuse it, for example by using:</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback></generalfeedback>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>1.0000000</defaultmark>
+        <penalty>0.3333333</penalty>
+        <qtype>multichoice</qtype>
+        <length>1</length>
+        <stamp>moodle.learn.eosc-synergy.eu+211214163613+tp3yHX</stamp>
+        <version>moodle.learn.eosc-synergy.eu+211214163614+5Hb6cp</version>
+        <hidden>0</hidden>
+        <timecreated>1639499773</timecreated>
+        <timemodified>1639499773</timemodified>
+        <createdby>30</createdby>
+        <modifiedby>30</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <plugin_qtype_multichoice_question>
+          <answers>
+            <answer id="1172">
+              <answertext>Standardised methods</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1173">
+              <answertext>Common data formats</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1174">
+              <answertext>Quality control</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1175">
+              <answertext>Documentation</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1176">
+              <answertext>All answers are correct</answertext>
+              <answerformat>1</answerformat>
+              <fraction>1.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+          </answers>
+          <multichoice id="253">
+            <layout>0</layout>
+            <single>1</single>
+            <shuffleanswers>1</shuffleanswers>
+            <correctfeedback></correctfeedback>
+            <correctfeedbackformat>1</correctfeedbackformat>
+            <partiallycorrectfeedback></partiallycorrectfeedback>
+            <partiallycorrectfeedbackformat>1</partiallycorrectfeedbackformat>
+            <incorrectfeedback></incorrectfeedback>
+            <incorrectfeedbackformat>1</incorrectfeedbackformat>
+            <answernumbering>abc</answernumbering>
+            <shownumcorrect>0</shownumcorrect>
+            <showstandardinstruction>0</showstandardinstruction>
+          </multichoice>
+        </plugin_qtype_multichoice_question>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      <question id="296">
+        <parent>0</parent>
+        <name>How does EOSC Synergy support the vision of EOSC in practice?</name>
+        <questiontext>How does EOSC Synergy support the vision of EOSC in practice?</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback></generalfeedback>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>1.0000000</defaultmark>
+        <penalty>0.3333333</penalty>
+        <qtype>multichoice</qtype>
+        <length>1</length>
+        <stamp>moodle.learn.eosc-synergy.eu+211214163748+2eD1sc</stamp>
+        <version>moodle.learn.eosc-synergy.eu+211214163749+SZXCB9</version>
+        <hidden>0</hidden>
+        <timecreated>1639499868</timecreated>
+        <timemodified>1639499868</timemodified>
+        <createdby>30</createdby>
+        <modifiedby>30</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <plugin_qtype_multichoice_question>
+          <answers>
+            <answer id="1177">
+              <answertext>By providing digital technologies to deliver services to researchers, complying with the transparency and openness principles.</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1178">
+              <answertext>By supporting observational, experimental and simulated data by latest technologies for transfer and storage.</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1179">
+              <answertext>By supporting advanced research projects by cutting-edge computing infrastructures.</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1180">
+              <answertext>By creating state-of-the-art software to enable technology, and streamline collaboration to solve fundamental problems in science and societal challenges.</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1181">
+              <answertext>All of the other options.</answertext>
+              <answerformat>1</answerformat>
+              <fraction>1.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+          </answers>
+          <multichoice id="254">
+            <layout>0</layout>
+            <single>1</single>
+            <shuffleanswers>1</shuffleanswers>
+            <correctfeedback></correctfeedback>
+            <correctfeedbackformat>1</correctfeedbackformat>
+            <partiallycorrectfeedback></partiallycorrectfeedback>
+            <partiallycorrectfeedbackformat>1</partiallycorrectfeedbackformat>
+            <incorrectfeedback></incorrectfeedback>
+            <incorrectfeedbackformat>1</incorrectfeedbackformat>
+            <answernumbering>abc</answernumbering>
+            <shownumcorrect>0</shownumcorrect>
+            <showstandardinstruction>0</showstandardinstruction>
+          </multichoice>
+        </plugin_qtype_multichoice_question>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      <question id="297">
+        <parent>0</parent>
+        <name>Thanks to the EOSC, knowledge infrastructures, such as universities, ...</name>
+        <questiontext>Thanks to the EOSC, knowledge infrastructures, such as universities, libraries, and museums will be able to:</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback></generalfeedback>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>1.0000000</defaultmark>
+        <penalty>0.3333333</penalty>
+        <qtype>multichoice</qtype>
+        <length>1</length>
+        <stamp>moodle.learn.eosc-synergy.eu+211214163750+F0xxY8</stamp>
+        <version>moodle.learn.eosc-synergy.eu+211214163751+QcsWHB</version>
+        <hidden>0</hidden>
+        <timecreated>1639499870</timecreated>
+        <timemodified>1639499870</timemodified>
+        <createdby>30</createdby>
+        <modifiedby>30</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <plugin_qtype_multichoice_question>
+          <answers>
+            <answer id="1182">
+              <answertext>Exchange data</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1183">
+              <answertext>Find data </answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1184">
+              <answertext>Have access to data </answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1185">
+              <answertext>Reproduce data </answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1186">
+              <answertext>All of the above </answertext>
+              <answerformat>1</answerformat>
+              <fraction>1.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+          </answers>
+          <multichoice id="255">
+            <layout>0</layout>
+            <single>1</single>
+            <shuffleanswers>1</shuffleanswers>
+            <correctfeedback></correctfeedback>
+            <correctfeedbackformat>1</correctfeedbackformat>
+            <partiallycorrectfeedback></partiallycorrectfeedback>
+            <partiallycorrectfeedbackformat>1</partiallycorrectfeedbackformat>
+            <incorrectfeedback></incorrectfeedback>
+            <incorrectfeedbackformat>1</incorrectfeedbackformat>
+            <answernumbering>abc</answernumbering>
+            <shownumcorrect>0</shownumcorrect>
+            <showstandardinstruction>0</showstandardinstruction>
+          </multichoice>
+        </plugin_qtype_multichoice_question>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      <question id="298">
+        <parent>0</parent>
+        <name>EOSC is a European programme which:</name>
+        <questiontext>EOSC is a European programme which:</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback></generalfeedback>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>1.0000000</defaultmark>
+        <penalty>0.3333333</penalty>
+        <qtype>multichoice</qtype>
+        <length>1</length>
+        <stamp>moodle.learn.eosc-synergy.eu+211214163753+KdDHjV</stamp>
+        <version>moodle.learn.eosc-synergy.eu+211214163754+j8MC5E</version>
+        <hidden>0</hidden>
+        <timecreated>1639499873</timecreated>
+        <timemodified>1639499873</timemodified>
+        <createdby>30</createdby>
+        <modifiedby>30</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <plugin_qtype_multichoice_question>
+          <answers>
+            <answer id="1187">
+              <answertext>Is limited to Europe only.</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1188">
+              <answertext>Is limited to the founding member states of the EU.</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1189">
+              <answertext>Extends beyond Europe with different stakeholders involved as partners.</answertext>
+              <answerformat>1</answerformat>
+              <fraction>1.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1190">
+              <answertext>Is exclusively meant for countries with the highest investment in research and innovation in Europe.</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+          </answers>
+          <multichoice id="256">
+            <layout>0</layout>
+            <single>1</single>
+            <shuffleanswers>1</shuffleanswers>
+            <correctfeedback></correctfeedback>
+            <correctfeedbackformat>1</correctfeedbackformat>
+            <partiallycorrectfeedback></partiallycorrectfeedback>
+            <partiallycorrectfeedbackformat>1</partiallycorrectfeedbackformat>
+            <incorrectfeedback></incorrectfeedback>
+            <incorrectfeedbackformat>1</incorrectfeedbackformat>
+            <answernumbering>abc</answernumbering>
+            <shownumcorrect>0</shownumcorrect>
+            <showstandardinstruction>0</showstandardinstruction>
+          </multichoice>
+        </plugin_qtype_multichoice_question>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      <question id="299">
+        <parent>0</parent>
+        <name>What is FAIR about? </name>
+        <questiontext>What is FAIR about? </questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback></generalfeedback>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>1.0000000</defaultmark>
+        <penalty>0.3333333</penalty>
+        <qtype>multichoice</qtype>
+        <length>1</length>
+        <stamp>moodle.learn.eosc-synergy.eu+211214163756+rlX4KG</stamp>
+        <version>moodle.learn.eosc-synergy.eu+211214163757+ouhLca</version>
+        <hidden>0</hidden>
+        <timecreated>1639499876</timecreated>
+        <timemodified>1639499876</timemodified>
+        <createdby>30</createdby>
+        <modifiedby>30</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <plugin_qtype_multichoice_question>
+          <answers>
+            <answer id="1191">
+              <answertext>Official guidelines for data management </answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1192">
+              <answertext>Exclusively open data </answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1193">
+              <answertext>A set of best practices for sharing research data</answertext>
+              <answerformat>1</answerformat>
+              <fraction>1.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1194">
+              <answertext>Mandatory research standards </answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+          </answers>
+          <multichoice id="257">
+            <layout>0</layout>
+            <single>1</single>
+            <shuffleanswers>1</shuffleanswers>
+            <correctfeedback></correctfeedback>
+            <correctfeedbackformat>1</correctfeedbackformat>
+            <partiallycorrectfeedback></partiallycorrectfeedback>
+            <partiallycorrectfeedbackformat>1</partiallycorrectfeedbackformat>
+            <incorrectfeedback></incorrectfeedback>
+            <incorrectfeedbackformat>1</incorrectfeedbackformat>
+            <answernumbering>abc</answernumbering>
+            <shownumcorrect>0</shownumcorrect>
+            <showstandardinstruction>0</showstandardinstruction>
+          </multichoice>
+        </plugin_qtype_multichoice_question>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      <question id="300">
+        <parent>0</parent>
+        <name>What are some of the practical examples of transparency and openness to which...</name>
+        <questiontext>What are some of the practical examples of transparency and openness to which EOSC-Synergy is committed?</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback></generalfeedback>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>1.0000000</defaultmark>
+        <penalty>0.3333333</penalty>
+        <qtype>multichoice</qtype>
+        <length>1</length>
+        <stamp>moodle.learn.eosc-synergy.eu+211214163758+6LF303</stamp>
+        <version>moodle.learn.eosc-synergy.eu+211214163759+qvDFGp</version>
+        <hidden>0</hidden>
+        <timecreated>1639499878</timecreated>
+        <timemodified>1639499878</timemodified>
+        <createdby>30</createdby>
+        <modifiedby>30</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <plugin_qtype_multichoice_question>
+          <answers>
+            <answer id="1195">
+              <answertext>Making services freely available to all European researchers.</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1196">
+              <answertext>All of the other options.</answertext>
+              <answerformat>1</answerformat>
+              <fraction>1.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1197">
+              <answertext>Use of open-source software.</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1198">
+              <answertext>Integrating scientific applications of EOSC federation services.</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+          </answers>
+          <multichoice id="258">
+            <layout>0</layout>
+            <single>1</single>
+            <shuffleanswers>1</shuffleanswers>
+            <correctfeedback></correctfeedback>
+            <correctfeedbackformat>1</correctfeedbackformat>
+            <partiallycorrectfeedback></partiallycorrectfeedback>
+            <partiallycorrectfeedbackformat>1</partiallycorrectfeedbackformat>
+            <incorrectfeedback></incorrectfeedback>
+            <incorrectfeedbackformat>1</incorrectfeedbackformat>
+            <answernumbering>abc</answernumbering>
+            <shownumcorrect>0</shownumcorrect>
+            <showstandardinstruction>0</showstandardinstruction>
+          </multichoice>
+        </plugin_qtype_multichoice_question>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      <question id="301">
+        <parent>0</parent>
+        <name>A data management plan involves the following elements: </name>
+        <questiontext>A data management plan involves the following elements: </questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback></generalfeedback>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>1.0000000</defaultmark>
+        <penalty>0.3333333</penalty>
+        <qtype>multichoice</qtype>
+        <length>1</length>
+        <stamp>moodle.learn.eosc-synergy.eu+211214163800+ZsEseF</stamp>
+        <version>moodle.learn.eosc-synergy.eu+211214163800+PIqXKA</version>
+        <hidden>0</hidden>
+        <timecreated>1639499880</timecreated>
+        <timemodified>1639499880</timemodified>
+        <createdby>30</createdby>
+        <modifiedby>30</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <plugin_qtype_multichoice_question>
+          <answers>
+            <answer id="1199">
+              <answertext>Improves access, discovery and reuse of your research.</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1200">
+              <answertext>Defines the storage and preservation of data.</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1201">
+              <answertext>Establishes data maintenance and documentation practices. </answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1202">
+              <answertext>All of the other options.</answertext>
+              <answerformat>1</answerformat>
+              <fraction>1.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+          </answers>
+          <multichoice id="259">
+            <layout>0</layout>
+            <single>1</single>
+            <shuffleanswers>1</shuffleanswers>
+            <correctfeedback></correctfeedback>
+            <correctfeedbackformat>1</correctfeedbackformat>
+            <partiallycorrectfeedback></partiallycorrectfeedback>
+            <partiallycorrectfeedbackformat>1</partiallycorrectfeedbackformat>
+            <incorrectfeedback></incorrectfeedback>
+            <incorrectfeedbackformat>1</incorrectfeedbackformat>
+            <answernumbering>abc</answernumbering>
+            <shownumcorrect>0</shownumcorrect>
+            <showstandardinstruction>0</showstandardinstruction>
+          </multichoice>
+        </plugin_qtype_multichoice_question>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      <question id="302">
+        <parent>0</parent>
+        <name>Which of the following statements is false?</name>
+        <questiontext>Which of the following statements is false?</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback></generalfeedback>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>1.0000000</defaultmark>
+        <penalty>0.3333333</penalty>
+        <qtype>multichoice</qtype>
+        <length>1</length>
+        <stamp>moodle.learn.eosc-synergy.eu+211214163801+qzVeQh</stamp>
+        <version>moodle.learn.eosc-synergy.eu+211214163802+C37jBu</version>
+        <hidden>0</hidden>
+        <timecreated>1639499881</timecreated>
+        <timemodified>1639499881</timemodified>
+        <createdby>30</createdby>
+        <modifiedby>30</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <plugin_qtype_multichoice_question>
+          <answers>
+            <answer id="1203">
+              <answertext>EOSC stimulates citizen science.</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1204">
+              <answertext>EOSC helps facilitate Open Science in Europe.</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1205">
+              <answertext>EOSC supports research findings that are always openly shared with everyone.</answertext>
+              <answerformat>1</answerformat>
+              <fraction>1.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1206">
+              <answertext>E-infrastructures constitute the core of the EOSC.</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+          </answers>
+          <multichoice id="260">
+            <layout>0</layout>
+            <single>1</single>
+            <shuffleanswers>1</shuffleanswers>
+            <correctfeedback></correctfeedback>
+            <correctfeedbackformat>1</correctfeedbackformat>
+            <partiallycorrectfeedback></partiallycorrectfeedback>
+            <partiallycorrectfeedbackformat>1</partiallycorrectfeedbackformat>
+            <incorrectfeedback></incorrectfeedback>
+            <incorrectfeedbackformat>1</incorrectfeedbackformat>
+            <answernumbering>abc</answernumbering>
+            <shownumcorrect>0</shownumcorrect>
+            <showstandardinstruction>0</showstandardinstruction>
+          </multichoice>
+        </plugin_qtype_multichoice_question>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      <question id="303">
+        <parent>0</parent>
+        <name>When collecting or creating research data you should do it in a way, so that ...</name>
+        <questiontext>When collecting or creating research data you should do it in a way, so that others can understand your data and reuse it, for example by using:</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback></generalfeedback>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>1.0000000</defaultmark>
+        <penalty>0.3333333</penalty>
+        <qtype>multichoice</qtype>
+        <length>1</length>
+        <stamp>moodle.learn.eosc-synergy.eu+211214163803+cVfErf</stamp>
+        <version>moodle.learn.eosc-synergy.eu+211214163804+mvfPuL</version>
+        <hidden>0</hidden>
+        <timecreated>1639499883</timecreated>
+        <timemodified>1639499883</timemodified>
+        <createdby>30</createdby>
+        <modifiedby>30</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <plugin_qtype_multichoice_question>
+          <answers>
+            <answer id="1207">
+              <answertext>Standardised methods</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1208">
+              <answertext>Common data formats</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1209">
+              <answertext>Quality control</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1210">
+              <answertext>Documentation</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1211">
+              <answertext>All answers are correct</answertext>
+              <answerformat>1</answerformat>
+              <fraction>1.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+          </answers>
+          <multichoice id="261">
+            <layout>0</layout>
+            <single>1</single>
+            <shuffleanswers>1</shuffleanswers>
+            <correctfeedback></correctfeedback>
+            <correctfeedbackformat>1</correctfeedbackformat>
+            <partiallycorrectfeedback></partiallycorrectfeedback>
+            <partiallycorrectfeedbackformat>1</partiallycorrectfeedbackformat>
+            <incorrectfeedback></incorrectfeedback>
+            <incorrectfeedbackformat>1</incorrectfeedbackformat>
+            <answernumbering>abc</answernumbering>
+            <shownumcorrect>0</shownumcorrect>
+            <showstandardinstruction>0</showstandardinstruction>
+          </multichoice>
+        </plugin_qtype_multichoice_question>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      <question id="304">
+        <parent>0</parent>
+        <name>Q1</name>
+        <questiontext>Read the following statements and select the correct answer(s)
+&lt;br&gt;A research data lifecycle:</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback></generalfeedback>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>1.0000000</defaultmark>
+        <penalty>0.3333333</penalty>
+        <qtype>multichoice</qtype>
+        <length>1</length>
+        <stamp>moodle.learn.eosc-synergy.eu+211215102056+HIKdIx</stamp>
+        <version>moodle.learn.eosc-synergy.eu+220110151355+EWhFNm</version>
+        <hidden>0</hidden>
+        <timecreated>1639563656</timecreated>
+        <timemodified>1641827635</timemodified>
+        <createdby>30</createdby>
+        <modifiedby>65</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <plugin_qtype_multichoice_question>
+          <answers>
+            <answer id="1212">
+              <answertext>Ensures all relevant stakeholders are aware of your research</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1213">
+              <answertext>Specifies data management tasks throughout a research project.&amp;nbsp;</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.5000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1214">
+              <answertext>Guarantees external funding for your research.</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1215">
+              <answertext>Demonstrates that research data is a valuable resource in itself.</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.5000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+          </answers>
+          <multichoice id="262">
+            <layout>0</layout>
+            <single>0</single>
+            <shuffleanswers>1</shuffleanswers>
+            <correctfeedback>Your answer is correct.</correctfeedback>
+            <correctfeedbackformat>1</correctfeedbackformat>
+            <partiallycorrectfeedback>Your answer is partially correct.</partiallycorrectfeedback>
+            <partiallycorrectfeedbackformat>1</partiallycorrectfeedbackformat>
+            <incorrectfeedback>Your answer is incorrect.</incorrectfeedback>
+            <incorrectfeedbackformat>1</incorrectfeedbackformat>
+            <answernumbering>ABCD</answernumbering>
+            <shownumcorrect>1</shownumcorrect>
+            <showstandardinstruction>0</showstandardinstruction>
+          </multichoice>
+        </plugin_qtype_multichoice_question>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      <question id="305">
+        <parent>0</parent>
+        <name>Q2</name>
+        <questiontext>A data management plan involves the following elements:&amp;nbsp;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback></generalfeedback>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>1.0000000</defaultmark>
+        <penalty>0.3333333</penalty>
+        <qtype>multichoice</qtype>
+        <length>1</length>
+        <stamp>moodle.learn.eosc-synergy.eu+211215102325+yTBT0D</stamp>
+        <version>moodle.learn.eosc-synergy.eu+211215104112+thnfQJ</version>
+        <hidden>0</hidden>
+        <timecreated>1639563805</timecreated>
+        <timemodified>1639564872</timemodified>
+        <createdby>30</createdby>
+        <modifiedby>30</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <plugin_qtype_multichoice_question>
+          <answers>
+            <answer id="1216">
+              <answertext>Improves access, discovery and reuse of your research.</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1217">
+              <answertext>&lt;span lang="EN-US"&gt;Defines the storage and&amp;nbsp;&lt;/span&gt;&lt;span lang="EN-US"&gt;preservation&amp;nbsp;of data.&lt;/span&gt;</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1218">
+              <answertext>Establishes data maintenance and documentation practices.&amp;nbsp;</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1219">
+              <answertext>All of the other options.</answertext>
+              <answerformat>1</answerformat>
+              <fraction>1.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+          </answers>
+          <multichoice id="263">
+            <layout>0</layout>
+            <single>1</single>
+            <shuffleanswers>1</shuffleanswers>
+            <correctfeedback>Your answer is correct.</correctfeedback>
+            <correctfeedbackformat>1</correctfeedbackformat>
+            <partiallycorrectfeedback>Your answer is partially correct.</partiallycorrectfeedback>
+            <partiallycorrectfeedbackformat>1</partiallycorrectfeedbackformat>
+            <incorrectfeedback>Your answer is incorrect.</incorrectfeedback>
+            <incorrectfeedbackformat>1</incorrectfeedbackformat>
+            <answernumbering>ABCD</answernumbering>
+            <shownumcorrect>1</shownumcorrect>
+            <showstandardinstruction>0</showstandardinstruction>
+          </multichoice>
+        </plugin_qtype_multichoice_question>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      <question id="306">
+        <parent>0</parent>
+        <name>Q3</name>
+        <questiontext>When collecting or creating research data you should do it in a way, so that others can understand your data and reuse it, for example by using:</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback></generalfeedback>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>1.0000000</defaultmark>
+        <penalty>0.3333333</penalty>
+        <qtype>multichoice</qtype>
+        <length>1</length>
+        <stamp>moodle.learn.eosc-synergy.eu+211215102501+2kJQzN</stamp>
+        <version>moodle.learn.eosc-synergy.eu+220110151511+EsflGa</version>
+        <hidden>0</hidden>
+        <timecreated>1639563901</timecreated>
+        <timemodified>1641827711</timemodified>
+        <createdby>30</createdby>
+        <modifiedby>65</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <plugin_qtype_multichoice_question>
+          <answers>
+            <answer id="1220">
+              <answertext>Standardised methods</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1221">
+              <answertext>Common data formats</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1222">
+              <answertext>Quality control</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1223">
+              <answertext>Documentation</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1224">
+              <answertext>All of the other options.</answertext>
+              <answerformat>1</answerformat>
+              <fraction>1.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+          </answers>
+          <multichoice id="264">
+            <layout>0</layout>
+            <single>1</single>
+            <shuffleanswers>1</shuffleanswers>
+            <correctfeedback>Your answer is correct.</correctfeedback>
+            <correctfeedbackformat>1</correctfeedbackformat>
+            <partiallycorrectfeedback>Your answer is partially correct.</partiallycorrectfeedback>
+            <partiallycorrectfeedbackformat>1</partiallycorrectfeedbackformat>
+            <incorrectfeedback>Your answer is incorrect.</incorrectfeedback>
+            <incorrectfeedbackformat>1</incorrectfeedbackformat>
+            <answernumbering>ABCD</answernumbering>
+            <shownumcorrect>1</shownumcorrect>
+            <showstandardinstruction>0</showstandardinstruction>
+          </multichoice>
+        </plugin_qtype_multichoice_question>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      <question id="307">
+        <parent>0</parent>
+        <name>Q4</name>
+        <questiontext>Processing and analysing data includes the following elements:</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback></generalfeedback>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>1.0000000</defaultmark>
+        <penalty>0.3333333</penalty>
+        <qtype>multichoice</qtype>
+        <length>1</length>
+        <stamp>moodle.learn.eosc-synergy.eu+211215102722+u6tmQW</stamp>
+        <version>moodle.learn.eosc-synergy.eu+220110151926+qhcNBE</version>
+        <hidden>0</hidden>
+        <timecreated>1639564042</timecreated>
+        <timemodified>1641827966</timemodified>
+        <createdby>30</createdby>
+        <modifiedby>65</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <plugin_qtype_multichoice_question>
+          <answers>
+            <answer id="1225">
+              <answertext>Cleaning and validating</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.3333333</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1226">
+              <answertext>Transcribing and translating</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.3333333</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1227">
+              <answertext>Interviewing and recording</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="1228">
+              <answertext>Anonymising</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.3333333</fraction>
+              <feedback></feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+          </answers>
+          <multichoice id="265">
+            <layout>0</layout>
+            <single>0</single>
+            <shuffleanswers>1</shuffleanswers>
+            <correctfeedback>Your answer is correct.</correctfeedback>
+            <correctfeedbackformat>1</correctfeedbackformat>
+            <partiallycorrectfeedback>Your answer is partially correct.</partiallycorrectfeedback>
+            <partiallycorrectfeedbackformat>1</partiallycorrectfeedbackformat>
+            <incorrectfeedback>Your answer is incorrect.</incorrectfeedback>
+            <incorrectfeedbackformat>1</incorrectfeedbackformat>
+            <answernumbering>ABCD</answernumbering>
+            <shownumcorrect>1</shownumcorrect>
+            <showstandardinstruction>0</showstandardinstruction>
+          </multichoice>
+        </plugin_qtype_multichoice_question>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+    </questions>
+  </question_category>
+  <question_category id="169">
+    <name>top</name>
+    <contextid>1192</contextid>
+    <contextlevel>70</contextlevel>
+    <contextinstanceid>536</contextinstanceid>
+    <info></info>
+    <infoformat>0</infoformat>
+    <stamp>moodle.learn.eosc-synergy.eu+211126105712+ZIgDfT</stamp>
+    <parent>0</parent>
+    <sortorder>0</sortorder>
+    <idnumber>$@NULL@$</idnumber>
+    <questions>
+    </questions>
+  </question_category>
+  <question_category id="170">
+    <name>Default for The role of data stewards</name>
+    <contextid>1192</contextid>
+    <contextlevel>70</contextlevel>
+    <contextinstanceid>536</contextinstanceid>
+    <info>The default category for questions shared in context 'The role of data stewards'.</info>
+    <infoformat>0</infoformat>
+    <stamp>moodle.learn.eosc-synergy.eu+211126105712+iE7tcT</stamp>
+    <parent>169</parent>
+    <sortorder>999</sortorder>
+    <idnumber>$@NULL@$</idnumber>
+    <questions>
+    </questions>
+  </question_category>
+  <question_category id="171">
+    <name>top</name>
+    <contextid>1193</contextid>
+    <contextlevel>70</contextlevel>
+    <contextinstanceid>537</contextinstanceid>
+    <info></info>
+    <infoformat>0</infoformat>
+    <stamp>moodle.learn.eosc-synergy.eu+211126112926+O41OLT</stamp>
+    <parent>0</parent>
+    <sortorder>0</sortorder>
+    <idnumber>$@NULL@$</idnumber>
+    <questions>
+    </questions>
+  </question_category>
+  <question_category id="172">
+    <name>Default for Quiz RDM, FAIR and Open Science</name>
+    <contextid>1193</contextid>
+    <contextlevel>70</contextlevel>
+    <contextinstanceid>537</contextinstanceid>
+    <info>The default category for questions shared in context 'Quiz RDM, FAIR and Open Science'.</info>
+    <infoformat>0</infoformat>
+    <stamp>moodle.learn.eosc-synergy.eu+211126112926+zGVaTP</stamp>
+    <parent>171</parent>
+    <sortorder>999</sortorder>
+    <idnumber>$@NULL@$</idnumber>
+    <questions>
+    </questions>
+  </question_category>
+  <question_category id="173">
+    <name>top</name>
+    <contextid>1273</contextid>
+    <contextlevel>70</contextlevel>
+    <contextinstanceid>570</contextinstanceid>
+    <info></info>
+    <infoformat>0</infoformat>
+    <stamp>moodle.learn.eosc-synergy.eu+211214162807+G15EFg</stamp>
+    <parent>0</parent>
+    <sortorder>0</sortorder>
+    <idnumber>$@NULL@$</idnumber>
+    <questions>
+    </questions>
+  </question_category>
+  <question_category id="174">
+    <name>Default for Quiz</name>
+    <contextid>1273</contextid>
+    <contextlevel>70</contextlevel>
+    <contextinstanceid>570</contextinstanceid>
+    <info>The default category for questions shared in context 'Quiz'.</info>
+    <infoformat>0</infoformat>
+    <stamp>moodle.learn.eosc-synergy.eu+211214162810+rKTsz0</stamp>
+    <parent>173</parent>
+    <sortorder>999</sortorder>
+    <idnumber>$@NULL@$</idnumber>
+    <questions>
+    </questions>
+  </question_category>
+</question_categories>

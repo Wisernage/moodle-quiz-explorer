@@ -1,0 +1,39 @@
+# Usage:
+#   docker compose up --build
+#   # Import mybackup.mbz: .\scripts\load-sample.ps1  (mounts to /tmp — not /imports; see script)
+#   # Or copy mybackup.mbz into ./imports/ then: docker compose run --rm timo import /imports/mybackup.mbz -dsn 'file:/data/timo.db?cache=shared&_fk=1'
+#   # Tests: docker compose --profile test run --rm test
+
+services:
+  timo:
+    build:
+      context: .
+      target: runtime
+    ports:
+      - "8080:8080"
+    volumes:
+      # Persist SQLite DB; drop extra .mbz files under ./imports/
+      - timo-data:/data
+      - ./imports:/imports:ro
+      # Dev sample fixture (minimal quiz)
+      - ./testdata:/testdata:ro
+    command:
+      - serve
+      - -addr
+      - 0.0.0.0:8080
+      - -dsn
+      - file:/data/timo.db?cache=shared&_fk=1
+    restart: unless-stopped
+
+  # Run tests: docker compose --profile test run --rm test
+  test:
+    build:
+      context: .
+      target: test
+    volumes:
+      - .:/src
+    profiles:
+      - test
+
+volumes:
+  timo-data:

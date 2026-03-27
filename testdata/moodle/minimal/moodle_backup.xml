@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<moodle_backup>
+  <information>
+    <moodle_version>2024042200</moodle_version>
+  </information>
+  <contents>
+    <sections>
+      <section>
+        <sectionid>0</sectionid>
+        <activities>
+          <activity>
+            <moduleid>1</moduleid>
+            <modulename>quiz</modulename>
+            <directory>activities/quiz_1</directory>
+            <title>Demo quiz</title>
+          </activity>
+        </activities>
+      </section>
+    </sections>
+  </contents>
+</moodle_backup>

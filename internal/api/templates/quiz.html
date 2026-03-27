@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>{{.Name}}</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 52rem; margin: 2rem auto; padding: 0 1rem; color: #1a1a1a; background: #fafafa; }
+    h1 { font-size: 1.5rem; }
+    .meta { color: #555; font-size: 0.9rem; margin-bottom: 1.5rem; }
+    .q { border: 1px solid #ddd; border-radius: 8px; padding: 1rem 1.25rem; margin-bottom: 1rem; background: #fff; }
+    .q h2 { font-size: 1rem; margin: 0 0 0.5rem; }
+    .unsupported { background: #fff8e6; border-color: #e6c200; }
+    pre.payload { font-size: 0.75rem; overflow: auto; max-height: 12rem; background: #f4f4f4; padding: 0.5rem; border-radius: 4px; }
+    a { color: #0b57d0; }
+  </style>
+</head>
+<body>
+  <p><a href="/">← Quizzes</a></p>
+  <h1>{{.Name}}</h1>
+  <p class="meta">Moodle quiz id {{.MoodleQuizID}} · behaviour {{.QuestionBehaviour}}</p>
+  <div class="intro">{{.Intro | safeHTML}}</div>
+  {{range .Slots}}
+  <div class="q {{if .Question}}{{if isUnsupported .Question.Qtype}}unsupported{{end}}{{end}}">
+    <h2>Slot {{.Slot}} · {{if .Question}}{{.Question.Qtype}}{{else}}(no question){{end}}</h2>
+    {{if .Question}}
+      <div class="stem">{{.Question.QuestionText | safeHTML}}</div>
+      {{if isUnsupported .Question.Qtype}}
+        <p><em>This question type is imported but not interactive in v1.</em></p>
+      {{end}}
+      <pre class="payload">{{.Question.Payload}}</pre>
+    {{else}}
+      <p><em>Missing question reference.</em></p>
+    {{end}}
+  </div>
+  {{end}}
+</body>
+</html>

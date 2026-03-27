@@ -1,0 +1,10 @@
+.git
+.gitignore
+*.md
+.idea
+.vscode
+.cursor
+**/terminals
+timo.db
+imports/
+*.mbz

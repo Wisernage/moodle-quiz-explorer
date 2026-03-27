@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Quizzes</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 40rem; margin: 2rem auto; padding: 0 1rem; }
+    ul { list-style: none; padding: 0; }
+    li { margin: 0.5rem 0; }
+    a { color: #0b57d0; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <h1>Imported quizzes</h1>
+  {{if .}}
+  <ul>
+    {{range .}}
+    <li><a href="/quizzes/{{.ID}}">{{.Name}}</a> <small>(moodle id {{.MoodleQuizID}})</small></li>
+    {{end}}
+  </ul>
+  {{else}}
+  <p>No quizzes yet.</p>
+  <p><strong>Docker:</strong> place <code>mybackup.mbz</code> in the project root and run <code>.\scripts\load-sample.ps1</code> (or see that script for the raw <code>docker compose run … -v … import</code> command).</p>
+  <p>Or run <code>.\scripts\load-sample.ps1</code> / <code>./scripts/load-sample.sh</code>.</p>
+  <p><strong>Local:</strong> <code>timo import mybackup.mbz</code></p>
+  <p><small>Dev sample: <code>timo import testdata/moodle/minimal.mbz</code></small></p>
+  <p><small>If you still see old data, restart import: each full import <strong>replaces</strong> all imported quizzes. If the list stays empty, your backup has no quiz activities—export the course again and include quiz modules, or use a backup from a course that contains quizzes.</small></p>
+  {{end}}
+</body>
+</html>

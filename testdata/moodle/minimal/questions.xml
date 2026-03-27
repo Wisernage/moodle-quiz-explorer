@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<question_categories>
+  <question_category>
+    <questions>
+      <question id="5" type="multichoice">
+        <name><text>MC1</text></name>
+        <questiontext format="html">
+          <text><![CDATA[<p>Pick one.</p>]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+          <text></text>
+        </generalfeedback>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.3333333</penalty>
+        <single>true</single>
+        <shuffleanswers>true</shuffleanswers>
+        <answernumbering>abc</answernumbering>
+        <answer fraction="1">
+          <text><![CDATA[<p>Correct</p>]]></text>
+        </answer>
+        <answer fraction="0">
+          <text><![CDATA[<p>Wrong</p>]]></text>
+        </answer>
+      </question>
+      <question id="6" type="truefalse">
+        <name><text>TF1</text></name>
+        <questiontext format="html">
+          <text><![CDATA[<p>Sky is blue.</p>]]></text>
+        </questiontext>
+        <defaultgrade>1</defaultgrade>
+        <answer fraction="1">
+          <text>true</text>
+        </answer>
+        <answer fraction="0">
+          <text>false</text>
+        </answer>
+      </question>
+    </questions>
+  </question_category>
+</question_categories>
