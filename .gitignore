@@ -1,0 +1,35 @@
+# Binaries
+/timo
+/timo.exe
+*.exe
+*.test
+
+# Go
+coverage.out
+coverage.html
+vendor/
+
+# SQLite and local data
+*.db
+*.db-shm
+*.db-wal
+/data/
+
+# Course backups (may contain private student or institution data)
+*.mbz
+mybackup.mbz
+
+# Ad-hoc extraction / scratch (not test fixtures)
+/_extract/
+
+# Environment
+.env
+.env.*
+
+# Editors and OS
+.idea/
+.vscode/
+*.swp
+*~
+.DS_Store
+Thumbs.db

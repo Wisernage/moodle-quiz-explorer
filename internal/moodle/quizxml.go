@@ -62,6 +62,8 @@ type QuestionInstanceXML struct {
 	Page            int     `xml:"page"`
 	MaxMark         float64 `xml:"maxmark"`
 	QuizGradeItemID *int64  `xml:"quizgradeitemid"`
+	// Legacy Moodle 3.x / pre–question-bank-reference: points to questions.xml <question id="…">.
+	LegacyMoodleQuestionID int64 `xml:"questionid"`
 
 	References []QuestionReferenceXML `xml:"question_reference"`
 }

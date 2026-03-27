@@ -27,3 +27,22 @@ func TestBuildPayloadTruefalse(t *testing.T) {
 	j := BuildPayloadJSON("truefalse", []byte(raw))
 	require.True(t, strings.Contains(j, "true"))
 }
+
+func TestBuildPayloadTruefalseMoodle3Plugin(t *testing.T) {
+	raw := `<question id="285" type="truefalse">
+		<plugin_qtype_truefalse_question>
+			<answers>
+				<answer id="1">
+					<answertext>True</answertext>
+					<fraction>0</fraction>
+				</answer>
+				<answer id="2">
+					<answertext>False</answertext>
+					<fraction>1.0000000</fraction>
+				</answer>
+			</answers>
+		</plugin_qtype_truefalse_question>
+	</question>`
+	j := BuildPayloadJSON("truefalse", []byte(raw))
+	require.Contains(t, j, `"correct":"false"`)
+}

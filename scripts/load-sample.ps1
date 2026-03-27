@@ -1,4 +1,6 @@
 # Imports ./mybackup.mbz (project root) into the same DB volume the server uses.
+# Each import replaces all quiz/question rows in SQLite (full reset of app data).
+# To also delete the persisted DB file and WAL (clean slate): .\scripts\reset-and-import.ps1
 # Start the stack first: docker compose up -d
 # Requires: mybackup.mbz in the project root (next to docker-compose.yml)
 

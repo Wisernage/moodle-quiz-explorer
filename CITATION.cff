@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+title: Timo
+message: >-
+  If you use this software in research or education, please cite it using the
+  metadata below. Update repository-code to your fork URL if applicable.
+type: software
+authors:
+  - name: The Timo contributors
+repository-code: "https://github.com/YOUR_GITHUB_USERNAME/timo"
+license: MIT
+date-released: "2026-03-27"

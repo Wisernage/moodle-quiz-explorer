@@ -64,6 +64,7 @@ func ParseQuestionsXML(r io.Reader) (map[int64]QuestionXML, error) {
 					q.RawFragment = string(m)
 				}
 			}
+			enrichLegacyQuestionXML(&q)
 			out[q.ID] = q
 		}
 	}
@@ -123,9 +124,48 @@ func parseQuestionBankEntries(data []byte) map[int64]QuestionXML {
 			continue
 		}
 		q.RawFragment = frag
+		enrichLegacyQuestionXML(&q)
 		if entry.ID != 0 {
 			out[entry.ID] = q
 		}
 	}
 	return out
+}
+
+// enrichLegacyQuestionXML fills fields from Moodle 2.x/3.x backup shape: <qtype>, plain <name>,
+// <questiontext> text (not nested <text>), <defaultmark>, etc.
+func enrichLegacyQuestionXML(q *QuestionXML) {
+	if q.RawFragment == "" {
+		return
+	}
+	raw := q.RawFragment
+	if strings.TrimSpace(q.Type) == "" {
+		q.Type = strings.TrimSpace(firstTagInnerText(raw, "qtype"))
+	}
+	if strings.TrimSpace(q.Name) == "" {
+		q.Name = strings.TrimSpace(firstTagInnerText(raw, "name"))
+	}
+	if strings.TrimSpace(q.QuestionText.Text) == "" {
+		q.QuestionText.Text = strings.TrimSpace(firstTagInnerText(raw, "questiontext"))
+		if q.QuestionText.Text != "" && q.QuestionText.Format == "" {
+			q.QuestionText.Format = "html"
+		}
+	}
+	if strings.TrimSpace(q.GeneralFeedback.Text) == "" {
+		q.GeneralFeedback.Text = strings.TrimSpace(firstTagInnerText(raw, "generalfeedback"))
+	}
+	if q.DefaultGrade == 0 {
+		if dm := strings.TrimSpace(firstTagInnerText(raw, "defaultmark")); dm != "" {
+			q.DefaultGrade = ParseFloat(dm)
+		}
+	}
+}
+
+func firstTagInnerText(raw, local string) string {
+	re := regexp.MustCompile(`(?s)<` + regexp.QuoteMeta(local) + `[^>]*>(.*?)</` + regexp.QuoteMeta(local) + `>`)
+	m := re.FindStringSubmatch(raw)
+	if len(m) < 2 {
+		return ""
+	}
+	return strings.TrimSpace(m[1])
 }

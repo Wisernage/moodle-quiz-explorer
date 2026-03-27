@@ -174,8 +174,13 @@ func ImportBackupDir(db *gorm.DB, root string) error {
 
 func importOneQuiz(tx *gorm.DB, qx *moodle.QuizXML, byQID map[int64]moodle.QuestionXML, byBank map[int64]moodle.QuestionXML) error {
 	// Delete existing quiz with same Moodle id for idempotent re-import.
+	// Use Find (not First) so a missing row does not trigger ErrRecordNotFound / noisy GORM logs.
 	var existing model.Quiz
-	if err := tx.Where("moodle_quiz_id = ?", qx.ID).First(&existing).Error; err == nil {
+	res := tx.Limit(1).Where("moodle_quiz_id = ?", qx.ID).Find(&existing)
+	if res.Error != nil {
+		return res.Error
+	}
+	if res.RowsAffected > 0 {
 		tx.Where("quiz_id = ?", existing.ID).Delete(&model.QuizSlot{})
 		tx.Where("quiz_id = ?", existing.ID).Delete(&model.QuizSection{})
 		tx.Where("quiz_id = ?", existing.ID).Delete(&model.QuizFeedback{})
@@ -283,27 +288,41 @@ func importOneQuiz(tx *gorm.DB, qx *moodle.QuizXML, byQID map[int64]moodle.Quest
 		}
 	}
 
-	// Ensure Question rows for each unique bank entry referenced by this quiz.
+	// Ensure Question rows for each bank entry (Moodle 4+) and legacy question id (Moodle 3.x slots).
 	bankSeen := make(map[int64]struct{})
+	legacySeen := make(map[int64]struct{})
 	for _, inst := range qx.QuestionInstances.Instances {
-		bankID := inst.QuestionBankEntryID()
-		if bankID == 0 {
-			continue
+		if bankID := inst.QuestionBankEntryID(); bankID != 0 {
+			bankSeen[bankID] = struct{}{}
+		} else if inst.LegacyMoodleQuestionID != 0 {
+			legacySeen[inst.LegacyMoodleQuestionID] = struct{}{}
 		}
-		bankSeen[bankID] = struct{}{}
 	}
 	questionByBank := make(map[int64]uint)
 	for bankID := range bankSeen {
-		id, err := ensureQuestion(tx, bankID, byQID, byBank)
+		id, err := ensureQuestionByBankID(tx, bankID, byQID, byBank)
 		if err != nil {
 			return err
 		}
 		questionByBank[bankID] = id
 	}
+	questionByMoodleID := make(map[int64]uint)
+	for mqid := range legacySeen {
+		id, err := ensureQuestionByMoodleQID(tx, mqid, byQID)
+		if err != nil {
+			return err
+		}
+		questionByMoodleID[mqid] = id
+	}
 
 	for _, inst := range qx.QuestionInstances.Instances {
 		bankID := inst.QuestionBankEntryID()
-		qid := questionByBank[bankID]
+		var qid uint
+		if bankID != 0 {
+			qid = questionByBank[bankID]
+		} else if inst.LegacyMoodleQuestionID != 0 {
+			qid = questionByMoodleID[inst.LegacyMoodleQuestionID]
+		}
 		slot := model.QuizSlot{
 			QuizID:                q.ID,
 			Slot:                  inst.Slot,
@@ -330,7 +349,7 @@ func nz64(v int64) *int64 {
 	return &v
 }
 
-func ensureQuestion(tx *gorm.DB, bankID int64, byQID map[int64]moodle.QuestionXML, byBank map[int64]moodle.QuestionXML) (uint, error) {
+func ensureQuestionByBankID(tx *gorm.DB, bankID int64, byQID map[int64]moodle.QuestionXML, byBank map[int64]moodle.QuestionXML) (uint, error) {
 	if bankID == 0 {
 		return 0, nil
 	}
@@ -363,6 +382,51 @@ func ensureQuestion(tx *gorm.DB, bankID int64, byQID map[int64]moodle.QuestionXM
 	payload := moodle.BuildPayloadJSON(qxml.Type, []byte(raw))
 	mq := model.Question{
 		MoodleBankEntryID: bankID,
+		MoodleQuestionID:  qxml.ID,
+		Qtype:             qxml.Type,
+		Name:              qxml.Name,
+		QuestionText:      qxml.QuestionText.Text,
+		DefaultMark:       qxml.DefaultGrade,
+		GeneralFeedback:   qxml.GeneralFeedback.Text,
+		IDNumber:          qxml.IDNumber,
+		Payload:           payload,
+		RawXML:            raw,
+	}
+	if err := tx.Create(&mq).Error; err != nil {
+		return 0, err
+	}
+	return mq.ID, nil
+}
+
+func ensureQuestionByMoodleQID(tx *gorm.DB, moodleQID int64, byQID map[int64]moodle.QuestionXML) (uint, error) {
+	if moodleQID == 0 {
+		return 0, nil
+	}
+	var ex model.Question
+	if err := tx.Where("moodle_question_id = ?", moodleQID).First(&ex).Error; err == nil {
+		return ex.ID, nil
+	}
+	qxml, ok := byQID[moodleQID]
+	if !ok {
+		mq := model.Question{
+			MoodleBankEntryID: 0,
+			MoodleQuestionID:  moodleQID,
+			Qtype:             "missingtype",
+			Name:              fmt.Sprintf("missing question id %d", moodleQID),
+			Payload:           `{"qtype":"missingtype","missing":true}`,
+		}
+		if err := tx.Create(&mq).Error; err != nil {
+			return 0, err
+		}
+		return mq.ID, nil
+	}
+	raw := qxml.RawFragment
+	if raw == "" {
+		raw = "<question/>"
+	}
+	payload := moodle.BuildPayloadJSON(qxml.Type, []byte(raw))
+	mq := model.Question{
+		MoodleBankEntryID: 0,
 		MoodleQuestionID:  qxml.ID,
 		Qtype:             qxml.Type,
 		Name:              qxml.Name,

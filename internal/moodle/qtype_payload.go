@@ -62,6 +62,30 @@ func BuildPayloadJSON(qType string, xmlBytes []byte) string {
 				out["correct"] = lab
 			}
 		}
+		if _, ok := out["correct"]; !ok {
+			// Moodle 3.x backup: answers use <answertext> under plugin_qtype_truefalse_question.
+			var leg struct {
+				Plugin struct {
+					Answers struct {
+						List []struct {
+							AnsText  string `xml:"answertext"`
+							Fraction string `xml:"fraction"`
+						} `xml:"answer"`
+					} `xml:"answers"`
+				} `xml:"plugin_qtype_truefalse_question"`
+			}
+			_ = xml.Unmarshal(xmlBytes, &leg)
+			for _, a := range leg.Plugin.Answers.List {
+				f, _ := strconv.ParseFloat(strings.TrimSpace(a.Fraction), 64)
+				if f > 1.001 {
+					f /= 100
+				}
+				if f > 0.99 {
+					out["correct"] = strings.ToLower(strings.TrimSpace(a.AnsText))
+					break
+				}
+			}
+		}
 		b, _ := json.Marshal(out)
 		return string(b)
 	case "shortanswer":

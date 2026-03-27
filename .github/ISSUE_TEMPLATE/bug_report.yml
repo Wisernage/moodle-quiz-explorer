@@ -1,0 +1,51 @@
+name: Bug report
+description: Report something that does not work as expected
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug. Please include enough detail to reproduce the issue.
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What went wrong in one or two sentences?
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Commands, backup type (ZIP vs tar.gz Moodle backup), and OS if relevant.
+      placeholder: |
+        1. timo import ...
+        2. timo serve ...
+        3. Open ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      description: Error messages, logs, or screenshots if helpful.
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Timo version or Git commit
+      description: Output of `go version` if building from source.
+    validations:
+      required: false

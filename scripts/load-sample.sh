@@ -1,5 +1,6 @@
 #!/usr/bin/env sh
 # Imports ./mybackup.mbz (project root) into the same DB volume the server uses.
+# Each import replaces all quiz/question rows. For a wiped volume + fresh file: ./scripts/reset-and-import.sh
 # Start the stack first: docker compose up -d
 
 set -e

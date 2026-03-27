@@ -1,7 +1,8 @@
 # Usage:
 #   docker compose up --build
-#   # Import mybackup.mbz: .\scripts\load-sample.ps1  (mounts to /tmp — not /imports; see script)
-#   # Or copy mybackup.mbz into ./imports/ then: docker compose run --rm timo import /imports/mybackup.mbz -dsn 'file:/data/timo.db?cache=shared&_fk=1'
+#   # Import mybackup.mbz (replaces all quiz data in SQLite): .\scripts\load-sample.ps1
+#   # Wipe persisted DB volume + import fresh file: .\scripts\reset-and-import.ps1
+#   # Or: docker compose run --rm -v "${PWD}/mybackup.mbz:/tmp/mybackup.mbz:ro" timo import /tmp/mybackup.mbz -dsn 'file:/data/timo.db?cache=shared&_fk=1'
 #   # Tests: docker compose --profile test run --rm test
 
 services:
