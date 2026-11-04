@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>{{.Name}}</title>
+  <title>{{.Name}} | Moodle Quiz Explorer</title>
   <style>
     :root {
       --moodle-bg: #f5f6f8;
@@ -94,7 +94,7 @@
 <body>
   <p><a href="/">← Quizzes</a></p>
   <h1>{{.Name}}</h1>
-  <p class="meta">Moodle quiz id {{.MoodleQuizID}} · behaviour {{.QuestionBehaviour}}</p>
+  <p class="meta">Moodle quiz id {{.MoodleQuizID}}, behaviour {{.QuestionBehaviour}}</p>
 
   <div class="view-toolbar" role="group" aria-label="View mode">
     <label>View</label>
@@ -109,7 +109,7 @@
     <div class="intro">{{.Intro | safeHTML}}</div>
     {{range .Slots}}
     <div class="q {{if .Question}}{{if isUnsupported .Question.Qtype}}unsupported{{end}}{{end}}">
-      <h2>Slot {{.Slot}} · {{if .Question}}{{.Question.Qtype}}{{else}}(no question){{end}}</h2>
+      <h2>Slot {{.Slot}}, {{if .Question}}{{.Question.Qtype}}{{else}}(no question){{end}}</h2>
       {{if .Question}}
         <div class="stem">{{.Question.QuestionText | safeHTML}}</div>
         {{if isUnsupported .Question.Qtype}}

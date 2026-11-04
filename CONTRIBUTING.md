@@ -1,6 +1,6 @@
 # Contributing
 
-Thank you for your interest in Timo. This document explains how to report issues, propose changes, and get a pull request merged smoothly.
+This guide covers issues, changes and pull requests for Moodle Quiz Explorer.
 
 ## Code of conduct
 
@@ -27,7 +27,7 @@ See [docs/development.md](docs/development.md) for Go version, **CGO**, build co
 
 ## Go module path
 
-The module is currently `timo` (short path). If you maintain a fork under your own GitHub account and want a canonical import path, you may rename the module to `github.com/yourname/timo` in `go.mod` and update imports — that is a deliberate refactor; do it in a dedicated change if needed.
+The Go module remains `timo` for compatibility. The project and repository are named Moodle Quiz Explorer. A canonical Go module path would require updating `go.mod` and all internal imports in a dedicated change.
 
 ## Security
 
