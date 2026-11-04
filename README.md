@@ -1,12 +1,12 @@
-# Timo
+# Moodle Quiz Explorer
 
-**Import Moodle quiz backups and browse them locally.** Timo reads standard Moodle course backups (`.mbz` as ZIP or gzip-compressed tar), stores quiz metadata and questions in **SQLite**, and serves a small **HTTP UI** plus a **JSON API** for listing quizzes and viewing question payloads.
+**Import Moodle quiz backups and browse them locally.** Moodle Quiz Explorer reads standard Moodle course backups (`.mbz` as ZIP or gzip-compressed tar), stores quiz metadata and questions in **SQLite**, and serves a small **HTTP UI** plus a **JSON API** for listing quizzes and viewing question payloads.
 
 [![Go](https://img.shields.io/badge/Go-1.22-00ADD8?logo=go)](https://go.dev/dl/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![CI](https://github.com/YOUR_GITHUB_USERNAME/timo/actions/workflows/ci.yml/badge.svg)](https://github.com/YOUR_GITHUB_USERNAME/timo/actions/workflows/ci.yml)
+[![CI](https://github.com/Wisernage/moodle-quiz-explorer/actions/workflows/ci.yml/badge.svg)](https://github.com/Wisernage/moodle-quiz-explorer/actions/workflows/ci.yml)
 
-> Replace `YOUR_GITHUB_USERNAME` in the CI badge URL after you publish the repository.
+> Formerly Timo. The `timo` command, Go module, database filename and Docker service/volume names remain compatible with existing installations.
 
 ---
 
@@ -41,8 +41,8 @@
 **Requirements:** [Go 1.22+](https://go.dev/dl/), a C compiler and **CGO enabled** (SQLite driver `mattn/go-sqlite3`).
 
 ```bash
-git clone https://github.com/YOUR_GITHUB_USERNAME/timo.git
-cd timo
+git clone https://github.com/Wisernage/moodle-quiz-explorer.git
+cd moodle-quiz-explorer
 
 # Build (CGO must be on; on Windows use a dev environment that provides gcc, e.g. MSYS2 or TDM-GCC)
 go build -o timo ./cmd/timo
@@ -162,14 +162,3 @@ Contributions are welcome. Please read [CONTRIBUTING.md](CONTRIBUTING.md) and th
 ## License
 
 [MIT License](LICENSE)
-
----
-
-## Tips for your GitHub repository
-
-After you create the public repo:
-
-1. **Replace placeholders** — Search for `YOUR_GITHUB_USERNAME` in `README.md`, `CITATION.cff`, and the CI badge URL.
-2. **Topics** — Add labels such as `moodle`, `quiz`, `lms`, `sqlite`, `golang`, `education`, `backup` to improve discoverability.
-3. **About** — Set the website field to a docs site if you add one later; enable **Issues** and **Discussions** if you want community input.
-4. **Large files** — `.mbz` backups and local `.db` files are listed in `.gitignore`. If anything sensitive was committed before, remove it from history (for example with `git filter-repo`) before pushing publicly.

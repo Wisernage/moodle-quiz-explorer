@@ -1,11 +1,11 @@
 cff-version: 1.2.0
-title: Timo
+title: Moodle Quiz Explorer
 message: >-
   If you use this software in research or education, please cite it using the
   metadata below. Update repository-code to your fork URL if applicable.
 type: software
 authors:
-  - name: The Timo contributors
-repository-code: "https://github.com/YOUR_GITHUB_USERNAME/timo"
+  - name: The Moodle Quiz Explorer contributors
+repository-code: "https://github.com/Wisernage/moodle-quiz-explorer"
 license: MIT
 date-released: "2026-03-27"
